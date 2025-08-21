@@ -1,0 +1,176 @@
+\documentclass[a4aper,12pt]{report}
+\usepackage[margin=1in]{geometry}
+%For Drawing 
+%tikzpicture
+\usepackage{tikz}
+\usepackage{scalerel}
+\usepackage{pict2e}
+\usepackage{tkz-euclide}
+\usetikzlibrary{calc}
+\usetikzlibrary{patterns,arrows.meta}
+\usetikzlibrary{shadows}
+\usetikzlibrary{external}
+\usetikzlibrary{intersections}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage[american,RPvoltages]{circuitikz}
+\ctikzset{
+    resistors/scale=0.6    
+}
+%Hyperlinking Texts and Others
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkcolor=black,
+    urlcolor=black,
+    pdftitle = {EEE 2105: Solid State Physics}
+}
+%Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{EEE-2105: Solid State Physics}
+\rhead{Note by \href{https://www.facebook.com/nosrat.jahan.romy}{Romy} \& \href{https://www.facebook.com/mdgalibashrafbd}{Galib}}
+
+
+\usepackage{fancyvrb}
+\usepackage{lipsum}
+\usepackage{array}
+%For creating boxes and others fancy
+\usepackage[most,many]{tcolorbox}
+\tcbuselibrary{xparse}
+\tcbuselibrary{listings, breakable}
+% Define custom tcolorbox style for question and solution
+
+\newtcolorbox{hw}[1][]{
+  title=\textbf{H.W: }~#1,
+  coltitle=white,
+  colback=blue!5,
+  colframe=blue!60!black,
+  colbacktitle=blue!30!black,
+  breakable,
+  enhanced,
+  boxrule=1pt,
+  arc=4pt, % custom curvature for difference
+  top=6pt,
+  bottom=6pt,
+  left=8pt,
+  right=8pt,
+  before upper={\stepcounter{examplebox}}
+}
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%To add color in texts
+\usepackage{xcolor}
+
+%For using correct symbols and others by default
+\usepackage{amsmath, amssymb, amsfonts}
+
+%For Styling Chapters title
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+\usepackage[Conny]{fncychap}
+
+\usepackage{enumitem}
+
+\usepackage{array,tabularx}
+\usepackage{colortbl}
+\usepackage{changepage}
+\renewcommand{\arraystretch}{1.5}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\begin{document}
+\pgfplotsset{
+    standard/.style={
+    axis line style = thick,
+    trig format=rad,
+    enlargelimits,
+    axis x line=middle,
+    axis y line=middle,
+    enlarge x limits=0.15,
+    enlarge y limits=0.15,
+    every axis x label/.style={at={(current axis.right of origin)},anchor=north west},
+    every axis y label/.style={at={(current axis.above origin)},anchor=south east}
+    }
+}
+    \begin{center}
+        \begin{LARGE}
+            \textbf{\noindent Department of Electrical and Electrronics Engineering} \\
+             \textbf{University of Dhaka} \\
+        \end{LARGE}
+        \begin{Large}
+        Batch - 103, EEE-58 \\
+        \end{Large}
+        \vspace{1.5cm}
+        \begin{Large}
+            $2^{nd}$ Year $1^{st}$ Semester \\ 
+        \end{Large}
+        \vspace{1.5cm}
+        \includegraphics[scale=0.5]{logo.du.png} \\
+        \vspace{0.5cm}
+    \end{center}
+    \begin{Large}
+         \noindent\textbf{Course: EEE-2105} \\ 
+        \textbf{Title: Solid State Physics}\\
+        Class Techer: Saeed Mahmud Ullah \\
+    \end{Large}
+    \vspace{0.5cm}
+    \begin{center}
+        {\Large\textbf{ Note by}} \\
+        \begin{minipage}{0.3\linewidth}
+            \begin{flushright}
+                {\large
+                Nosrat Jahan Romy \\
+        Session: 2023-2024 \\ 
+        Class Roll: RH-041}
+            \end{flushright}
+        \end{minipage}
+        \begin{minipage}{0.05\linewidth}
+            \begin{center}
+                \rule{1pt}{2.2cm}
+            \end{center}
+            
+        \end{minipage}
+        \begin{minipage}{0.3\linewidth}
+            {\large Md. Galib Ashraf \\
+        Session: 2023-2024 \\ 
+        Class Roll: SH-042}
+        \end{minipage}
+    \begin{Large}
+         
+        
+    \end{Large}    
+    \end{center}
+    \thispagestyle{empty}
+    \newpage 
+    \chapter*{Syllabus}
+    \thispagestyle{empty}
+    \vspace*{-3.1cm}
+    \textbf{What Holds Solids Together:} Ionic Bonds, Covalent Bond, Molecular Orbital, van der Waals bonding, Fluctuating Dipole Forces, Metallic Bonding, Hydrogen Bonds, Covalent, Ionic and Molecular Crystals. \\ [5pt]
+    \textbf{Geometry of Solids:} Lattices and Unit Cells, Lattices in Three Dimensions, Bravais Lattice, Primitive Unit Cell, Wigner-Seitz Cell, The Body-Centered Cubic (bcc) Lattice, The Face-Centered Cubic (fcc) Lattice, Reciprocal Lattice, Lattice Planes, Miller Indices, Brillouin Zones, The Laue and Bragg Conditions for X-ray Diffraction, The Structure Factor. \\ [5pt]
+    \textbf{Electrons in Solid: }Electrons in a Periodic Potential, Kronig-Penney Model, Bloch’s Theorem, Energy Bands in Solids, Reduced and Extended Brillouin Zone, Bandgap, Metal, Insulator and Semiconductor, Direct and Indirect Bandgap Material, The Concept of Hole, Effective Mass of Electron, Group Velocity of Electron. \\ [5pt]
+    \textbf{Phonons in Solid: }Crystal Vibrations, Mono and Diatomic Crystal Chain, Atomic Potential, Dispersion and Normal Modes, Quantization of Elastic Waves, Quantum Modes: Phonons and its Spectrum, Long Wavelength Limit, Goldstone Modes, Crystal Momentum. \\ [5pt]
+    \textbf{Free Electron Theory of Metal: }The Free Electron Gas, Free Fermi Gas at Absolute Zero Temperature, Fermi-Dirac Distribution, Fermi Surface and Sphere in Metal, The Specific Heat Capacity of Electrons in Metal. \\ [5pt]
+    \textbf{Electron Emission: }Work Function, Surface Potential Barrier, Contact Potential, Ohmic and Rectifying Contacts, Thermionic Emission: Richardson-Dushman Equation, Schottky Effect, Field Emission: Fowler-Nordheim Equation, Secondary Emission, Secondary Multipliers, Photoelectric Effect and Emission, Thermoelectricity for Metal and Semiconductors, Electron Ballistics, Lorentz Equation and its Application, Child-Langmuir Three Halves Power Law. 
+\newpage
+\chapter*{Reference Books}
+\vspace*{-2.7cm}
+\thispagestyle{empty}
+\begin{enumerate}
+    \item Solid State Physics, $1^{st}$ Edition, Neil W. Ashcroft and N. David Mermin, Cengage Learning.
+    \item The Oxford Solid State Basics, $1^{st}$ Edition, Steven H. Simon, Oxford University Press
+    \item Introduction to Solid State Physics, $8^{th}$ Edition, Charles Kittel, Wiley.
+    \item Solid-State Physics: An Introduction to Principles of Materials Science, Harald Ibach and Hans Lüth, Springer
+    \item Electronic Properties of Materials, $4^{th}$ Edition, Rolf E. Hummel, Springer.
+    \item Band Theory and Electronic Properties of Solids, $1^{st}$ Edition, John Singleton, Oxford University Press.
+    \item Electronic Processes in Materials, Leonid V. Azaroff and James J. Brophy, McGrawHill.
+\end{enumerate}
+\tableofcontents 
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+\begin{tcolorbox}[breakable, title = \textbf{Q1. }Why we use semi-conductors for making devices?]
+    We use semiconductors for making devices because they allow precise control over the flow of electric current, which is essential for modern electronics. In metals, the electrical conductivity is always high and cannot be easily altered, so they are not suitable for switching or controlling signals. Semiconductors, on the other hand, have conductivity between that of a conductor and an insulator, and this property can be modified by adding impurities (doping) or by applying external voltages, light, or temperature changes. This controllability makes them perfect for building components like diodes, transistors, and integrated circuits. By adjusting their conductivity, we can create devices that act as switches, amplifiers, or sensors. Semiconductors also allow the miniaturization of circuits, enabling the creation of compact, high-speed, and low-power devices. Without semiconductors, technologies such as computers, smartphones, and solar cells would not be possible. Essentially, semiconductors provide the foundation for controlling and processing electrical signals efficiently in almost all electronic systems.
+\end{tcolorbox}
+\end{document}

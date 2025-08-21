@@ -1,0 +1,102 @@
+\documentclass[a5paper,10pt]{report}
+\usepackage[margin=0.75in]{geometry}
+%For Drawing 
+\usepackage{tikz}
+\usetikzlibrary{intersections}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage[american,RPvoltages]{circuitikz}
+\ctikzset{
+    resistors/scale=0.6    
+}
+%Hyperlinking Texts and Others
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkcolor=black,
+    urlcolor=black,
+    pdftitle = {EEE-2109: Signals and Systems}
+}
+%Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{EEE-2109: Signals and Systems}
+\rhead{Note by \href{https://www.facebook.com/mdgalibashrafbd}{Md. Galib Ashraf}}
+
+
+\usepackage{fancyvrb}
+\usepackage{lipsum}
+
+%For creating boxes and others fancy
+\usepackage[most]{tcolorbox}
+
+%To add color in texts
+\usepackage{xcolor}
+
+%For using correct symbols and others by default
+\usepackage{amsmath, amssymb, amsfonts}
+
+%For Styling Chapters title
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+\usepackage[Conny]{fncychap}
+
+\usepackage{enumitem}
+
+\usepackage{array,tabularx}
+\usepackage{colortbl}
+\renewcommand{\arraystretch}{1.5}
+\begin{document}
+    \begin{center}
+        \begin{Large}
+            \textbf{\noindent Department of Electrical and \\ Electrronics Engineering} \\
+        \end{Large}
+        \begin{large}
+            University of Dhaka \\
+        Batch - 103, EEE-58 \\
+        \end{large}
+        \vspace{0.5cm}
+        \begin{large}
+            $2^{nd}$ Year $1^{st}$ Semester \\ 
+        \end{large}
+        \vspace{0.5cm}
+        \includegraphics[scale=0.35]{logo.du.png} \\
+        \vspace{0.5cm}
+    \end{center}
+
+        \noindent\textbf{Course: EEE-2109} \\ 
+        \textbf{Title: Signals and Systems}\\
+        Class Techer: Md. Shahin Parvej\\
+    \vspace{0.5cm}
+    \begin{center}
+            Note by \\
+        Md. Galib Ashraf \\
+        Session: 2023-2024 \\ 
+        Class Roll: SH-042
+    \end{center}
+    \thispagestyle{empty}
+    \newpage 
+    \chapter*{Syllabus}
+    \thispagestyle{empty}
+    \vspace*{-3.1cm}
+    \textbf{Signals: }Classification of Signals, Basic Operations on Signals, Elementary Signals, The Concept of Frequency in Continuous-Time and Discrete-Time Signals, Analog-to-Digital and Digital-to-Analog Conversion. \\ [5pt]
+    \textbf{Systems: }Input-Output Description of Systems, Classification of Systems, Properties of Systems, Interconnection of Systems. \\ [5pt]
+    \textbf{Linear Time-Invariant (LTI) Systems: }Response of Continuous-Time LTI System and Convolution Integral, Response of a Discrete-Time LTI System and Convolution Sum, Recursive and Non-Recursive Systems, Differential and Difference Equation Representations of LTI Systems, Solution of Differential and Difference Equations, State Variable Descriptions of LTI Systems, Structures for the Realization of LTI Systems. \\ [5pt]
+    \textbf{Fourier Analysis of Signals and Systems: }Fourier Representations of Signals, The Fourier series, The Discrete-Time Fourier Series, The Fourier Transform, The Discrete-Time Fourier Transform, Properties of Fourier Representations, Parseval’s Theorem, Power Density Spectrum and Energy Density Spectrum. \\ [5pt]
+    \textbf{Applications of Fourier Analysis: }Frequency Response of LTI Systems to Complex Exponential Signals, Filtering and Bandwidth, Frequency AnalysisAnalog Electrical Systems, Sampling and Reconstruction of Signal, Convolution and Multiplication with Mixtures of Periodic and Non-periodic Signals, Modulation and Demodulation, Time-Division and Frequency-Division Multiplexing. \\ [5pt]
+    \textbf{The Laplace Transform: }Definition, Properties, Convergence of Laplace Transform, Initial-value and Final-Value Theorem, Inverse Laplace Transform, Partial-fraction Expansions, Heaviside Expansion Formula, Solution of Differential Equation, System Transfer Function, System Stability, Electrical Network Analysis.
+\newpage
+\chapter*{Reference Books}
+\vspace*{-2.7cm}
+\thispagestyle{empty}
+\begin{enumerate}
+    \item Signals and Systems, $2^{nd}$ Edition, Simon Haykin and Barry Van Veen, Wiley Inc.
+    \item Signals and Systems, $2^{nd}$ Edition, Alan V. Oppenheim, Alan S. Willsky and S. Hamid, Pearson Education.
+    \item Linear Systems and Signals, $3^{rd}$ Edition, B.P. Lathi and Roger Green, Oxford University Press.
+    \item Signals and Systems, $1^{st}$ Edition, Sanjit K. Mitra, Oxford University Press
+    \item Continuous and Discrete-Time Signals and Systems, $2^{nd}$ Edition, Samir S. Soliman and Mandyam D. Srinath, Prentice-Hall of India.
+\end{enumerate}
+\tableofcontents 
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+\chapter{Signals}
+\end{document}

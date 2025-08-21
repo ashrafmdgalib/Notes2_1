@@ -1,0 +1,171 @@
+\documentclass[a4aper,12pt]{report}
+\usepackage[margin=1in]{geometry}
+%For Drawing 
+%tikzpicture
+\usepackage{tikz}
+\usepackage{scalerel}
+\usepackage{pict2e}
+\usepackage{tkz-euclide}
+\usetikzlibrary{calc}
+\usetikzlibrary{patterns,arrows.meta}
+\usetikzlibrary{shadows}
+\usetikzlibrary{external}
+\usetikzlibrary{intersections}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage[american,RPvoltages]{circuitikz}
+\ctikzset{
+    resistors/scale=0.6    
+}
+%Hyperlinking Texts and Others
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkcolor=black,
+    urlcolor=black,
+    pdftitle = {EEE-2107: Electromechanical Energy Conversion I}
+}
+%Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{EEE-2107: Electromechanical Energy Conversion I}
+\rhead{Note by \href{https://www.facebook.com/nosrat.jahan.romy}{Romy} \& \href{https://www.facebook.com/mdgalibashrafbd}{Galib}}
+
+
+\usepackage{fancyvrb}
+\usepackage{lipsum}
+\usepackage{array}
+%For creating boxes and others fancy
+\usepackage[most,many]{tcolorbox}
+\tcbuselibrary{xparse}
+\tcbuselibrary{listings, breakable}
+% Define custom tcolorbox style for question and solution
+
+\newtcolorbox{hw}[1][]{
+  title=\textbf{H.W: }~#1,
+  coltitle=white,
+  colback=blue!5,
+  colframe=blue!60!black,
+  colbacktitle=blue!30!black,
+  breakable,
+  enhanced,
+  boxrule=1pt,
+  arc=4pt, % custom curvature for difference
+  top=6pt,
+  bottom=6pt,
+  left=8pt,
+  right=8pt,
+  before upper={\stepcounter{examplebox}}
+}
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%To add color in texts
+\usepackage{xcolor}
+
+%For using correct symbols and others by default
+\usepackage{amsmath, amssymb, amsfonts}
+
+%For Styling Chapters title
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+\usepackage[Conny]{fncychap}
+
+\usepackage{enumitem}
+
+\usepackage{array,tabularx}
+\usepackage{colortbl}
+\usepackage{changepage}
+\renewcommand{\arraystretch}{1.5}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\begin{document}
+\pgfplotsset{
+    standard/.style={
+    axis line style = thick,
+    trig format=rad,
+    enlargelimits,
+    axis x line=middle,
+    axis y line=middle,
+    enlarge x limits=0.15,
+    enlarge y limits=0.15,
+    every axis x label/.style={at={(current axis.right of origin)},anchor=north west},
+    every axis y label/.style={at={(current axis.above origin)},anchor=south east}
+    }
+}
+    \begin{center}
+        \begin{LARGE}
+            \textbf{\noindent Department of Electrical and Electrronics Engineering} \\
+             \textbf{University of Dhaka} \\
+        \end{LARGE}
+        \begin{Large}
+        Batch - 103, EEE-58 \\
+        \end{Large}
+        \vspace{1.5cm}
+        \begin{Large}
+            $2^{nd}$ Year $1^{st}$ Semester \\ 
+        \end{Large}
+        \vspace{1.5cm}
+        \includegraphics[scale=0.5]{logo.du.png} \\
+        \vspace{0.5cm}
+    \end{center}
+    \begin{Large}
+         \noindent\textbf{Course: EEE-2107} \\ 
+        \textbf{Title: Electromechanical Energy Conversion I}\\
+        Class Teacher: Md. Shahin Parvej\\
+    \end{Large}
+    \vspace{0.5cm}
+    \begin{center}
+        {\Large\textbf{ Note by}} \\
+        \begin{minipage}{0.3\linewidth}
+            \begin{flushright}
+                {\large
+                Nosrat Jahan Romy \\
+        Session: 2023-2024 \\ 
+        Class Roll: RH-041}
+            \end{flushright}
+        \end{minipage}
+        \begin{minipage}{0.05\linewidth}
+            \begin{center}
+                \rule{1pt}{2.2cm}
+            \end{center}
+            
+        \end{minipage}
+        \begin{minipage}{0.3\linewidth}
+            {\large Md. Galib Ashraf \\
+        Session: 2023-2024 \\ 
+        Class Roll: SH-042}
+        \end{minipage}
+    \begin{Large}
+         
+        
+    \end{Large}    
+    \end{center}
+    \thispagestyle{empty}
+    \newpage 
+    \chapter*{Syllabus}
+    \thispagestyle{empty}
+    \vspace*{-2.7cm}
+    \textbf{Electromagnetic Circuits: }Magnetic Field, Magnetic Circuit, Comparison between Magnetic and Electric Circuits, Magnetization, Magnetic Hysteresis, Hysteresis Loss, Leakage Flux, Faraday’s Laws of Electromagnetic Induction, Induced EMF, Self and Mutual Inductance, AC Excitation in Magnetic Circuit, Eddy Current Loss. \\ [5pt]
+    \textbf{DC Generator: }Main Constructional Features, Simple Loop Generator, Commutator, Armature Coils, Brushes, Armature Winding, Characteristics of Lap and Wave Winding, EMF and Torque Equation, Armature Reaction, Methods of Commutation, Types of DC Generators, No-load and Load Characteristics of Shunt, Series and Compound Generators, Losses and Efficiency of DC Generators. \\ [5pt]
+    \textbf{DC Motors: }Working Principle of DC Motors, Back EMF and EM Torque, Series and Shunt DC Motors, Starting of Shunt and Compound Wound DC Motors, Speed Control of DC Motors, Electrical Braking of DC Motor, Losses in DC Motor, Efficiency of DC Motor. \\ [5pt]
+    \textbf{Single-Phase Transformers: }Working Principle of a Transformer, Core Material and Construction, Transformer Winding, EMF Equation, An Ideal Transformer, Transformer on No-load and Load, Transformer Winding Resistance, Mutual and Leakage Fluxes, Equivalent Reactance, Equivalent Circuit for an Actual Transformer, Voltage Regulation, Losses in a Transformer, Efficiency of a Transformer, Transformer Tests: Voltage Ratio, Open-circuit or No-load Test, Short Circuit Test, Back-to-Back Test, Parallel Operation and Load Sharing of Transformers, Auto-transformer. \\ [5pt]
+    \textbf{Three-Phase Transformers: }Merits and Construction of Three Phase Transformer, Relative Primary and Secondary Windings, Polarity of Transformer Windings, Phasor Representation, Three-Phase Transformer Connections, Selection of Transformer Connections: Star-Star, Delta-Delta, Star-Delta Connections, Delta-Star and Delta-Zigzag, Parallel Operation of Three-Phase Transformers, Load Sharing between Three-Phase Transformers, No-load and Load Tap-Changers on Transformers, Transformation of Three-Phase Power with Two Single-Phase Transformers, Open-Delta or V-V and T-T Connections, Conversion of Three-Phase to Two-Phase and Vice-Versa, Difference between Power and Distribution Transformers, Power Transformer.
+\newpage
+\chapter*{Reference Books}
+\vspace*{-2.7cm}
+\thispagestyle{empty}
+\begin{enumerate}
+    \item Electrical Machines, $1^{st}$ Edition, S. K. Sahdev, Cambridge University Press.
+    \item Electric Machinery Fundamentals, $5^{th}$ Edition, Stephen J. Chapman, McGraw-Hill Education.
+    \item Electric Machinery, $6^{th}$ Edition, A.E. Fitzgerald, Charles Kingsley JR and Stephen D. Uman, McGraw-Hills.
+    \item Electric Machines: Theory, Operating Applications, and Controls, $2^{nd}$ Edition, Charles I. Hubert, Pearson.
+\end{enumerate}
+\tableofcontents 
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+\chapter{Electromagnetic Circuits}
+$\bullet\,\,$ Electromechanical Energy Conversion $\longrightarrow$ Machine
+\end{document}

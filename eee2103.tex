@@ -1,0 +1,107 @@
+\documentclass[a5paper,10pt]{report}
+\usepackage[margin=0.75in]{geometry}
+%For Drawing 
+\usepackage{tikz}
+\usetikzlibrary{intersections}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage[american,RPvoltages]{circuitikz}
+\ctikzset{
+    resistors/scale=0.6    
+}
+%Hyperlinking Texts and Others
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkcolor=black,
+    urlcolor=black,
+    pdftitle = {EEE-2103: Digital Electronics}
+}
+%Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{EEE-2103: Digital Electronics}
+\rhead{Note by \href{https://www.facebook.com/mdgalibashrafbd}{Md. Galib Ashraf}}
+
+
+\usepackage{fancyvrb}
+\usepackage{lipsum}
+
+%For creating boxes and others fancy
+\usepackage[most]{tcolorbox}
+
+%To add color in texts
+\usepackage{xcolor}
+
+%For using correct symbols and others by default
+\usepackage{amsmath, amssymb, amsfonts}
+
+%For Styling Chapters title
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+\usepackage[Conny]{fncychap}
+
+\usepackage{enumitem}
+
+\usepackage{array,tabularx}
+\usepackage{colortbl}
+\renewcommand{\arraystretch}{1.5}
+\begin{document}
+    \begin{center}
+        \begin{Large}
+            \textbf{\noindent Department of Electrical and \\ Electrronics Engineering} \\
+        \end{Large}
+        \begin{large}
+            University of Dhaka \\
+        Batch - 103, EEE-58 \\
+        \end{large}
+        \vspace{0.5cm}
+        \begin{large}
+            $2^{nd}$ Year $1^{st}$ Semester \\ 
+        \end{large}
+        \vspace{0.5cm}
+        \includegraphics[scale=0.35]{logo.du.png} \\
+        \vspace{0.5cm}
+    \end{center}
+
+        \noindent\textbf{Course: EEE-2103} \\ 
+        \textbf{Title: Digital Electronics}\\
+        Class Techer: Md. Shahin Parvej\\
+    \vspace{0.5cm}
+    \begin{center}
+            Note by \\
+        Md. Galib Ashraf \\
+        Session: 2023-2024 \\ 
+        Class Roll: SH-042
+    \end{center}
+    \thispagestyle{empty}
+    \newpage 
+    \chapter*{Syllabus}
+    \thispagestyle{empty}
+    \vspace*{-2.7cm}
+   \textbf{Introductory Concepts:} Digital and Analog Quantities, Binary Digits, Logic Levels, Digital Electronic Signals and Switches, Basic Logic Functions, Combinational and Sequential Logic Functions, Introduction to Programmable Logic and Fixed-Function Logic Devices. \\ [5pt]
+   \textbf{Number Systems, Operations, and Codes:} Decimal, Binary, Hexadecimal, Octal and Binary Coded Decimal Number Systems, Binary Arithmetic and Digital Codes. \\ [5pt]
+   \textbf{Logic Gates:} Inverter, AND Gate, OR Gate, NAND Gate, NOR Gate, ExclusiveOR and Exclusive-NOR Gate, Universal Gate, Programmable Logic, FixedFunction Logic Gates. \\ [5pt]
+   \textbf{Boolean Algebra and Logic Simplification:} Boolean Operations, Expressions,Laws and Algebra, De Morgan’s Theorems, Boolean Analysis of Logic Circuits, The Karnaugh Map, Don’t Care Conditions, SOP and POS Minimization. \\[5pt]
+   \textbf{Arithmetic Operations and Circuits:} Half and Full Adders, Half and Full Subtractor, 2’s complement, Ripple Carry and Look-Ahead Carry Adders, BCD Adders, Cascading BCD Adders, Multipliers. \\ [5pt]
+   \textbf{Functions of Combinational Logic:} Decoders: 1-of-8 decoders, BCD-to-Decimal Decoder/Driver, BCD-to-7-Segment Decoder/Drivers, Decoder IC, Encoders and Applications, Priority Encoders, Code Converters, Magnitude Comparators, Parity.Generators/Checkers, Multiplexers: Two, Four, Eight, Sixteen, Quad Two-Input MUX, Multiplexer Applications: Data Routing, Parallel-to-Serial Conversion, Logic Functions Generation, Demultiplexers and its Applications, 1-Line-to-8-Line Demultiplexer, Synchronous Data Transmission. \\ [5pt]
+   \textbf{Sequential Logic:} NAND/NOR Gate Latch, Edge-Detector Circuit, Flip-Flops: Clocked S-C Flip-Flop, Clocked J-K Flip-Flop, Clocked D Flip-Flop, T Flip-Flop, Master/Slave Flip-Flop, Clocked J-K Flip-Flop with Asynchronous Inputs, FlipFlop Applications: Edge Detection, Switch Bouncing Reduction, Parallel Data Transfer, Serial Data Transfer. Shift Registers and Counters: Shift Register Operations, Types of Shift Register, Shift Register Counters: Ring Counter and Johnson Counter, Asynchronous Counters, IC Asynchronous Counters, Asynchronous Down Counters, Synchronous Up/Down Counters, Pre-settable Counters, Counter with Arbitrary Sequences, Design of Synchronous Counters and Cascaded Counters. \\ [5pt] 
+   \textbf{Interfacing with the Analog World:}Methods of Digital-to-Analog Conversion: Weighted Resistors Converter, R-2R Ladder Converter, Methods of Analog-toDigital Conversion: Flash, Digital Ramp, Successive Approximation Converter, ADC and DAC Applications. \\ [5pt]
+   \textbf{Integrated-Circuit Logic Families:} Characteristic Parameters, The TTL Logic Family, TTL Series Characteristics, TTL Circuit Operation, Current-Sinking and Sourcing Action, Totem-Pole Output Circuit, TTL Series Characteristics, TTL Loading, Fan-In and Fan-Out, TTL NOR Gate, TTL NAND Gate, Digital MOSFET Circuits: CMOS, NMOS and PMOS Gates, Emitter-Coupled Logic, Direct Coupled Transistor Logic, Resistor Transistor Logic. \\ [5pt]
+   \textbf{Finite State Machines: }State Diagram, Moore-type and Melay-type Machines, State Machines Synthesis, State Machines in Verilog, State Encoding. \\ [5pt]
+   \textbf{Introduction to Programmable Logic Device:} Programmable Logic Device (PLD), Programmable Logic Array (PLA), Field-Programmable Gate Array (FPGA).
+\newpage
+\chapter*{Reference Books}
+\vspace*{-2.7cm}
+\thispagestyle{empty}
+\begin{enumerate}
+    \item Digital Systems, $12^{th}$ Edition, Ronald Tocci, Neal Widmer and Greg Moss, Pearson. 
+    \item Digital Fundamentals, $11^{th}$ Edition, Thomas L. Floyd, Pearson. 
+    \item Digital Electronics: A Practical Approach, $8^{th}$ Edition, William Kleitz, Prentice Hall.
+    \item Digital Electronics: Principles, Devices and Applications, Anil K. Maini, John Wiley and Sons Pub. Ltd.
+\end{enumerate}
+\tableofcontents 
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+\chapter{Introductory Concepts}
+
+\end{document}

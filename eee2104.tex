@@ -1,0 +1,118 @@
+\documentclass[a5paper,10pt]{report}
+\usepackage[margin=0.75in]{geometry}
+%For Drawing 
+\usepackage{tikz}
+\usetikzlibrary{intersections}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage[american,RPvoltages]{circuitikz}
+\ctikzset{
+    resistors/scale=0.6    
+}
+%Hyperlinking Texts and Others
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkcolor=black,
+    urlcolor=black,
+    pdftitle = {CSE 1201: Computer Programming}
+}
+%Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{CSE 1201: Computer Programming}
+\rhead{Note by \href{https://www.facebook.com/mdgalibashrafbd}{Md. Galib Ashraf}}
+
+
+\usepackage{fancyvrb}
+\usepackage{lipsum}
+
+%For creating boxes and others fancy
+\usepackage[most]{tcolorbox}
+
+%To add color in texts
+\usepackage{xcolor}
+
+%For using correct symbols and others by default
+\usepackage{amsmath, amssymb, amsfonts}
+
+%For Styling Chapters title
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+\usepackage[Conny]{fncychap}
+
+\usepackage{enumitem}
+
+\usepackage{array,tabularx}
+\usepackage{colortbl}
+\renewcommand{\arraystretch}{1.5}
+\begin{document}
+    \begin{center}
+        \begin{Large}
+            \textbf{\noindent Department of Electrical and \\ Electrronics Engineering} \\
+        \end{Large}
+        \begin{large}
+            University of Dhaka \\
+        Batch - 103, EEE-58 \\
+        \end{large}
+        \vspace{0.5cm}
+        \begin{large}
+            $2^{nd}$ Year $1^{st}$ Semester \\ 
+        \end{large}
+        \vspace{0.5cm}
+        \includegraphics[scale=0.35]{logo.du.png} \\
+        \vspace{0.5cm}
+    \end{center}
+
+        \noindent\textbf{Course: EEE-2101} \\ 
+        \textbf{Title: Analog Electronics I}\\
+        Class Techer: Md. Shahin Parvej\\
+    \vspace{0.5cm}
+    \begin{center}
+            Note by \\
+        Md. Galib Ashraf \\
+        Session: 2023-2024 \\ 
+        Class Roll: SH-042
+    \end{center}
+    \thispagestyle{empty}
+    \newpage 
+    \chapter*{Syllabus}
+    \thispagestyle{empty}
+    \vspace*{-2.7cm}
+    \textbf{PN Junction Diode and Diode Circuits:} Semiconductor Materials, Construction
+of PN Junction, Formation of Depletion Layer and Barrier Voltage in PN Junction,
+Current-Voltage Characteristics of a PN Junction Diode, Equivalent Circuit of
+Diode, Resistance and Capacitance of PN Junction, Diode Circuit and Load Line,
+Zener Diode Operation and Application, Half-Wave and Full-Wave Rectifier, Voltage Multiplier, Clipper and Clamper. \\ [5pt]
+\textbf{Bipolar Junction Transistors (BJT):} Construction and Operation of BJT,
+Amplifying Action, Characteristics of BJT in Common Base (CB), Common
+Emitter (CE) and Common Collector (CC) Configurations, $\alpha$ and $\beta$ , Q-Point and Load Line, Different Biasing Circuits, Stability Factor, BJT as a Switch, re and
+Hybrid Equivalent Circuit of BJT. \\ [5pt]
+\textbf{Single Stage BJT Amplifier Circuits: }Operation of Single-Stage Amplifier,
+Voltage and Current Gain, Input and Output Impedance of CB, CE, CC
+Configurations using h-Parameter, Effect of Unbypassed $R_E$, $R_S$. \\ [5pt]
+\textbf{Field Effect Transistor (FET): }JFET Structure, Operation and Characteristics, hParameters for JFET, MOSFET Construction, Operation and Characteristics,
+Biasing Circuits of JFET and MOSFET, Single-stage JFET Amplifier, MOSFET as
+a Switch, CMOS Inverter. \\ [5pt]
+\textbf{Multistage and Differential Amplifiers: } RC Coupled Two Stage Amplifiers,
+Direct-coupled Amplifier, Darlington Pair, Multistage Frequency Effects. \\ [5pt]
+\textbf{Feedback Amplifiers: } Principle of Feedback Amplifier, Positive and Negative
+Feedback, Advantages of Negative Feedback, Gain Stability, Decreased Distortion,
+Increased Bandwidth, Forms of Negative Feedback, Practical Feedback Circuits. 
+\newpage
+\chapter*{Reference Books}
+\vspace*{-2.7cm}
+\thispagestyle{empty}
+\begin{enumerate}
+    \item Electronic Devices and Circuits, $5^{th}$ Edition, David Bell, Oxford University Press.
+    \item Electronic Devices and Circuit Theory, Paperback Edition,  R.  \,\, Boylestad and L.Nashelsky, Pearson.
+    \item Electronic Devices and Circuits, Allen Mottershead, Goodyer Pub. Co.
+    \item Electronic Principles, Paperback Edition, Albert Malvino and David Bates, McGraw Hill.
+    \item Electronic Circuits: Discrete and Integrated, Paperback Edition, Donald Schilling, Charles Belove, and Raymond Saccardi, McGraw Hill.
+    \item Microelectronics, $2^{nd}$ Edition, Jacob Millman and Arvin Grabel, McGraw Hill.
+    \item Microelectronic Circuits: Theory and Applications, $7^th$ Edition, Adel S. Sedra, Kenneth C. Smith and Arun N. Chandorkar, Oxford University Press.
+\end{enumerate}
+\tableofcontents 
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+\chapter{PN Junction Diode and Diode Circuits}
+\end{document}

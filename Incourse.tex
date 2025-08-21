@@ -1,0 +1,352 @@
+\documentclass[a4paper,11pt]{exam}
+\usepackage[margin=1in, top=0.5in]{geometry}
+\usepackage[most]{tcolorbox}
+\usepackage{array,tabularx}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{xpatch}
+\usepackage{multicol}
+\usepackage{enumerate}
+\usepackage{pgffor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkcolor=black,
+    urlcolor=black,
+    pdftitle = {2-1 All Incourse Question}
+}
+
+\usepackage[version=4]{mhchem}
+%\printanswers
+\pointsinrightmargin
+\setlength{\rightpointsmargin}{1in}
+\pagestyle{headandfoot}
+\runningheader{2-1 All Incourse Question}{}{Note by Md. Galib Ashraf}
+\extraheadheight[.1in]{.25in}
+\begin{document}
+\vspace*{1.5cm}
+\begin{center}
+    \begin{LARGE}
+        \textbf{\noindent \href{https://du.ac.bd/body/EEE}{Department of Electrical And Electronic Engineering} \\ \href{https://du.ac.bd/}{University of Dhaka} \\}
+    \end{LARGE}
+    \begin{large}
+        \textbf{\noindent Batch - 103, EEE-58 \\} 
+    \end{large}
+    \vspace{0.75cm}
+    \begin{Large}
+        \textbf{\noindent $2^{nd}$ Year $1^{st}$ Semester \\}
+    \end{Large}
+    \vspace{1cm}\href{https://du.ac.bd/}{
+    \includegraphics[scale=0.35]{logo.du.png}} \\
+    \vspace{1.5cm}
+    {\LARGE \textbf{2-1 All Incourse Questions}}
+\end{center}
+
+\vspace{1.5cm}
+\begin{center}
+    \begin{Large}
+        Note by \\
+    \href{https://www.facebook.com/mdgalibashrafbd}{Md. Galib Ashraf} \\
+    Session: 2023-2024 (EEE-58)\\ 
+    Class Roll: SH-042 \\ 
+    Reg No: 2023-916-278
+    \end{Large}
+\end{center}
+\thispagestyle{empty}
+\newpage
+
+%EEE 2101 - Analog Electronics I
+\begin{center}
+    \begin{large}
+        {\textbf{
+            Department of Electrical And Electronic Engineering, University of Dhaka \\
+        }}
+    \end{large}
+    \textbf{$2^{nd}$ Year $1^{st}$ Semester B.Sc. Engineering Incourse Examination-2024 (EEE-57) \\
+        EEE-2101: Analog Electronics I (3 credits) \\
+        Time: 1 hour \hfill Full Marks: 20}
+    \noindent\rule{\linewidth}{1.2pt}
+\end{center}
+\underline{Answer any three(3) of the following four(4) questions} 
+\begin{questions}
+    \question Two identical pn junctions are placed in series \hfill (3+3=6)
+    \begin{parts}
+        \part Prove that the combination can be viewed as a single two-terminal device having and exponential characteristics.
+        \part For a tenfold change in the current, how much voltage change does such a device require.  
+    \end{parts}
+    \question For full-wave rectifier of Fig. below, i) Calculate the peak output current, and the PIV rating of the diodes. ii) Draw the input waveforms to the rectifier and the output waveforms. For both cases assume \ce{Si} diodes with $V = 0.7V$. The transformer steps down a 220V,50-Hz line voltage. \hfill (3+3)=6
+
+    \question Consider the circuit shown in Fig. below, where $I_{S.Q1} = 5\times 10^{-17}$A and $V_{BE} = 800$mV. Assume $\beta = 100$ (a) Draw the large signal model of the bipolar junction transistor (b) Determine the transistor terminal currents and voltages and verify that the device indeed operates in the active mode. (c) Determine the maximum value of $R_C$ that permits operation in the active mode. \hfill (2+3+3) = 8
+    \question A student, familiar with bipolar devices, constructs the circuit shown in the figure 
+\end{questions}
+
+
+
+
+
+%EEE 2103 - Digital Electronics
+\newpage
+\begin{center}
+    \begin{large}
+        {\textbf{
+            Department of Electrical And Electronic Engineering, University of Dhaka \\
+        }}
+    \end{large}
+    \textbf{$2^{nd}$ Year $1^{st}$ Semester B.Sc. Engineering Incourse Examination-2024 (EEE-57) \\
+        EEE 2103 - Digital Electronics (3 credits) \\
+        Time: 1 hour \hfill Full Marks: 25}
+    \noindent\rule{\linewidth}{1.2pt}
+\end{center}
+\underline{Answer all the following questions}
+\begin{questions}
+    \question For the following expressions, construct the corresponding logic circuit, using AND, OR gates and INVERTERs (do not simplify). \hfill (3)
+    \begin{parts}
+        \part $(\overline{\overline{x}\,\overline{y}+z})+z+xy+wz$
+        \part $y=(\overline{u \oplus y})+\overline{x}yz$
+    \end{parts}
+    \question simplify the following expressions: \hfill (3)
+    $$\overline{x}_1\overline{x}_2x_3+\overline{x}_1x_2\overline{x}_3+\overline{x}_1x_2x_3+x_1\overline{x}_2\overline{x}_3 + x_1\overline{x}_2x_3+x_1x_2\overline{x}_3+x_1x_2x_3$$
+    \question Draw the logic circuit implementation of a 2-bit by 2-bit multiplier circuit. \hfill(3.5)
+    \question Why a correction is required for BCD adders? Is this correction also necessary for binary addition? \hfill (4)
+    \question Draw a cascaded 8-bit comparator using two 74HC85 ICs. \hfill (2+2) \\
+    Describe the operation of the eight-bit comparison arrangement using the following case: \\
+    $A_7A_6A_5A_4A_3A_2A_1A_0 = 10101111;$ \\ 
+    $B_7B_6B_5B_4B_3B_2B_1B_0 = 101011001$
+    \question How can we combine two multiplexer ICs of 74HC15 to form a 16-input multiplexer? \hfill (4)
+    \question Draw the output response of the following J-K Flip-Flop. \hfill (3.5) \\
+    Based on the symbol, what kind of clock pulse is given here?  
+\end{questions}
+\newpage
+\begin{center}
+    \begin{large}
+        {\textbf{
+            Department of Electrical And Electronic Engineering, University of Dhaka \\
+        }}
+    \end{large}
+    \textbf{$2^{nd}$ Year $1^{st}$ Semester B.Sc. Engineering Incourse Examination-2024 (EEE-57) \\
+        EEE 2103 - Digital Electronics (3 credits) \\
+        Time: 1 hour \hfill Full Marks: 25}
+    \noindent\rule{\linewidth}{1.2pt}
+\end{center}
+\underline{Answer all the following questions}
+\begin{questions}
+    \question \begin{parts}
+        \part Write the next four numbers in this hex counting sequence: E9A, E9B,E9C,E9D, \dots\dots, \dots\dots\, , \dots\dots \, , \dots\dots . \hfill (3)
+        \part What range of decimal values can be represented by a four-digit hex number?  
+    \end{parts}
+    \question Design a logic circuit whose output is HIGH only when a majority of inputs A, B and C are LOW. \hfill (4)
+    \question Express a half-adder in \textbf{product of sum} form. \hfill (3)
+    \question Why a correction is required for BCD adders? Is this correction also necessary for binary addition? \hfill (4)
+    \question Draw a cascaded 8-bit comparator using two 74HC85 ICs. \hfill (2+2) \\
+    Describe the operation of the eight-bit comparison arrangement using the following case: \\
+    $A_7A_6A_5A_4A_3A_2A_1A_0 = 10101111;$ \\ 
+    $B_7B_6B_5B_4B_3B_2B_1B_0 = 101011001$
+    \question The following figure shows the pin diagram of a 74HC147 decimal-to-BCD priority encoder. If LOW input levels appear on pins, 1,4,and 13 of the 74HC147, what will be the state of the four outputs $(A_3,A_2,A_1 and A_0)$? (All other inputs are HIGH.)
+   
+    \question The following table shows the different output states of the LED segments of a BDC-to-7-Segment Decoder. Derive the expressions for ANY TWO segments, (a to g) using \textbf{k-map}, and show the circuit diagram for those three segments. 
+    \begin{center}
+        \includegraphics[scale=0.5]{57D1.png}
+    \end{center}
+\end{questions}
+
+
+
+\newpage
+%EEE 2105 - Solid State Physics
+\begin{center}
+    \begin{large}
+        {\textbf{
+            Department of Electrical And Electronic Engineering, University of Dhaka \\
+        }}
+    \end{large}
+    \textbf{$2^{nd}$ Year $1^{st}$ Semester B.Sc. Engineering Incourse Examination-2024 (EEE-57) \\
+        EEE-2105: Solid State Physics(3 credits) \\
+        Time: 1 hour \hfill Full Marks: 20}
+    \noindent\rule{\linewidth}{1.2pt}
+\end{center}
+\underline{Answer all following questions} 
+\begin{questions}
+    \question How does Van Dar Wall force arise? Derive an expression to show the dependence of potential energy between dipoles with distance between them. \hfill (6)
+    \question What rules do the electrons follow to fill orbitals of an atom? \hfill (4) 
+    \question How is the binding energy of outer electrons of \ce{Cl}? Discuss in terms of effective nuclear charge. Atomic number of \ce{Cl} is 17. \hfill (6)
+    \question Define lattice, unit cell and primitive unit cell. \hfill (4)
+\end{questions}
+
+
+\newpage
+%EEE 2107 - Electromechanical Energy Conversion I
+\begin{center}
+    \begin{large}
+        {\textbf{
+            Department of Electrical And Electronic Engineering, University of Dhaka \\
+        }}
+    \end{large}
+    \textbf{$2^{nd}$ Year $1^{st}$ Semester B.Sc. Engineering Incourse Examination-2024 (EEE-57) \\
+        EEE 2107 - Electromechanical Energy Conversion I \\
+        Time: 1 hour \hfill Full Marks: 20}
+    \noindent\rule{\linewidth}{1.2pt}
+\end{center}
+\underline{Answer any three of the following questions} \hfill $6\frac{2}{3} \times 3 = 20$
+\begin{questions}
+    \question Why does the rotor of a DC motor rotate? What is back e.m.f. and what is the significance of back e.m.f.? \hfill $[3+3\frac{2}{3}]$
+    \question Derive the condition for maximum efficiency of a DC motor.  \\ \\ 
+    A 4 pole, 32 conductor, lap-wound DC shunt generator with terminal voltage of 200 volts delivering $12 \, A$ to the load has $r_a = 2$ and field circuit resistance of $200\Omega$. It is driven at 1000 r.p.m. Calculate the flux per pole in the machine. If the machine has to be run as a motor with the same terminal voltage and drawing $5 \, A$from the mains, maintaining the same magnetic field, find the speed of the machine. \hfill $[2\frac{2}{3}+4]$
+    \question What is armature torque? Prove that the armature torque $T_a$ is directly proportional to $\Phi I_a$. Why shaft torque is less than armature torque? \hfill $[1+4+1\frac{2}{3}]$
+    \question Draw the $T_a/I_a$ characteristics of a DC motor and explain. \\ \\
+    A belt-driven 1000 kW, shunt generator running at 300 r.p.m. on 220 V bus-bars continues to run as a motor when the belt breaks, then taking 10 kW. What will be its speed? Given armature resistance $= 0.025 \Omega$, field resistance $= 60 \Omega$ and contact drop for each brush $=1V$, Ignore armature resistance. \hfill $[3+3\frac{2}{3}]$ 
+\end{questions}
+\newpage
+\begin{center}
+    \begin{large}
+        {\textbf{
+            Department of Electrical And Electronic Engineering, University of Dhaka \\
+        }}
+    \end{large}
+    \textbf{$2^{nd}$ Year $1^{st}$ Semester B.Sc. Engineering Incourse Examination-2024 (EEE-57) \\
+        EEE 2107 - Electromechanical Energy Conversion I \\
+        Time: 1 hour \hfill Full Marks: 20}
+    \noindent\rule{\linewidth}{1.2pt}
+\end{center}
+\underline{Answer any three of the following questions} \hfill $6\frac{2}{3} \times 3 = 20$
+\begin{questions}
+    \question Draw the circuit diagram of a single-loop generator and explain how a sinusoidal voltage is generated in this generator. Draw the waveform if the rotor starts to rotate $30^\circ$ apart from the reference point. \hfill $[1+4+1\frac{2}{3}]$
+    \question Describe the construction of Pole-Cores and Pole-Shoes. How laminations are made self-locking? Derive the EMF equation of a generator. \hfill $[1\frac{2}{3}+1+4]$
+    \question Explain the iron loss of a generator. \\ 
+    A 4-pole lap-winding D.C. shunt generator has a useful flux per pole of 0.07 Wb. The armature winding consists of 220 turns of $0.004 \Omega$ resistance. Calculate the terminal voltage when running at 900 r.p.m. if the armature current is 50A. \hfill $[2+4\frac{2}{3}]$
+    \question Explain different efficiencies used to evaluate the performance of a DC generator. Derive the condition for maximum efficiency. What are the components of constant losses? \hfill $[2+3+1\frac{2}{3}]$ 
+    \question Is there any effect on the flux of a generator when external load is connected? What is it called? Explain with suitable diagram how this effect happens. \hfill $[1+1+4\frac{2}{3}]$
+\end{questions}
+
+
+
+%EEE-2109: Signals and Systems
+\newpage
+\begin{center}
+    \begin{large}
+        {\textbf{
+            Department of Electrical And Electronic Engineering, University of Dhaka \\
+        }}
+    \end{large}
+    \textbf{$2^{nd}$ Year $1^{st}$ Semester B.Sc. Engineering Incourse Examination-2024 (EEE-57) \\
+        EEE-2109: Signals and Systems\\
+        Time: 1 hour \hfill Full Marks: 25}
+    \noindent\rule{\linewidth}{1.2pt}
+\end{center}
+\underline{Answer any five of the following questions}
+\begin{questions}
+    \question What do you understand by signals and system? Consider the following system $x(t)$ and sketch the signal, $y(t) = -1.3x(t) + 1$. \hfill (5)
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8]
+            \draw (0,-1.5) -- (0,1.5) (-1,0) -- (6,0);
+            \foreach \i in {1,2,5}{
+                \draw (\i,-0.3) node{\i};
+            }
+            \foreach \i in {3,4}{
+                \draw (\i,0.3) node{\i};
+            }
+            \draw (-0.3,-1) node{-1};
+            \draw (-0.3,1) node{1};
+            \draw[dashed] (0,1) -- (1,1) -- (1,0) (0,-1) -- (3,-1) -- (3,0) (4,0) -- (4,-1);
+            \draw[very thick] (0,0) --(1,1) -- (3,-1) -- (4,-1) -- (5,0);
+        \end{tikzpicture}
+    \end{center}
+    \question 
+    \begin{parts}
+        \part Consider the signal $x(t)$ shown in the following figure. Sketch the signal $y(t)$. \hfill (5)
+    $$y(t) = x(-4t+2)$$
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8]
+            \draw (0,-0.75) -- (0,3) (-1.5,0) -- (7,0);
+            \foreach \i in {-1,1,2}{
+                \draw (\i,-0.3) node{\i};
+                \draw (\i,0.1) -- (\i,-0.1);
+            }
+            \foreach \i in {4,5,6}{
+                \draw (\i,0.3) node{\i};
+                \draw (\i,0.1) -- (\i,-0.1);
+            }
+            \draw (0.3,2.3) node{2};
+            \draw (0.3,1) node{1};
+            \draw (-0.1,1) -- (0.1,1);
+            \draw[very thick] (-1.5,0) -- (-1,0) -- (-1,2) -- (2,2) -- (2,1) -- (3,1) -- (3,-0.5) -- (6,-0.5) -- (6,0) -- (7,0);
+        \end{tikzpicture}
+    \end{center}
+    \part Consider a continuous-time exponential signal, $x(t)$. If the signal is periodic then calculate its fundamental frequency. $$x(t) = Ce^{at}, \text{where } C \text{ is real and } a = j\omega _0$$
+    \end{parts}
+    \question Define energy and power of signal. Calculate power and energy of the following signal \hfill (5)
+    $$ x(t) = \begin{cases}
+        5\cos(\pi t) & -1\leq t \leq 1 \\
+        0 & \text{Otherwise}
+    \end{cases} $$
+    \question Determine whether the signal is periodic or not, and if so, find the fundamental period of the signal \hfill (5) $$ y(t) = \cos(2t) + \sin (3t)$$
+    \question Write the names of elementary signals. Define the unit impulse function and explain its sampling and shifting properties. \hfill (5)
+    \question Estimate and draw the double-sided amplitude and phase spectrum of the following signal \hfill (5)
+    $$x(t) = 2\cos(10\pi t+\dfrac{\pi}{4}) + 4\sin(30\pi t - \dfrac{\pi}{6})$$
+    \question Convert the composite CT signal to DT signal and calculate its fundamental period $N$. \hfill (5)
+    $$ x(t) = 3\cos(1.5\omega t)+5\cos(5\omega t) + 8\cos (10\omega t) + \cos(20\omega t) $$
+\end{questions}
+\newpage
+\begin{center}
+    \begin{large}
+        {\textbf{
+            Department of Electrical And Electronic Engineering, University of Dhaka \\
+        }}
+    \end{large}
+    \textbf{$2^{nd}$ Year $1^{st}$ Semester B.Sc. Engineering Incourse Examination-2024 (EEE-57) \\
+        EEE-2109: Signals and Systems\\
+        Time: 1 hour \hfill Full Marks: 25}
+    \noindent\rule{\linewidth}{1.2pt}
+\end{center}
+\underline{Answer all the following questions}
+\begin{questions}
+    \question What is convolution? Explain the process with proper diagram. \hfill (5)
+    \question Consider the following two sequences $x[n]$ and $h[n]$ and calculate convolution of the sequences. \hfill (5)
+    $$ x[n] = \{1,\underset{\uparrow}{0}, 0.5,0.25\} \qquad  \qquad h[n] = \{0.5,\underset{\uparrow}{1}, 0.6\}$$ 
+    \question Consider the two sequences $x[n]$ and $h[n]$ for a positive value of $\alpha > 1$. Calculate convolution of the two signals \hfill (8)
+    $$ x[n] = \begin{cases}
+        1, & 0\leq n \leq 4 \\
+        0, & \text{otherwise}
+    \end{cases} \qquad \text{and} \qquad h[n] = \begin{cases}
+        a^n, & 0\leq n \leq 6 \\ 
+        0, & \text{otherwise}
+    \end{cases} $$
+    \question Calculate the convolution of the following two signals \hfill (7)
+    $$ x[n] = \begin{cases}
+        1, & 0< t < T \\
+        0, & \text{otherwise}
+    \end{cases} \qquad \text{and} \qquad h[n] = \begin{cases}
+        t, & 0 < t < 2T \\ 
+        0, & \text{otherwise}
+    \end{cases} $$
+\end{questions}
+
+
+
+
+
+%MAT 2101 - Ordinary and Partial Differential Equations 
+\newpage
+\begin{center}
+    \begin{large}
+        {\textbf{
+            Department of Electrical And Electronic Engineering, University of Dhaka \\
+        }}
+    \end{large}
+    \textbf{$2^{nd}$ Year $1^{st}$ Semester B.Sc. Engineering Incourse Examination-2024 (EEE-57) \\
+        MAT 2101 - Ordinary and Partial Differential Equations \\
+        Time: 1 hour \hfill Full Marks: 20}
+    \noindent\rule{\linewidth}{1.2pt}
+\end{center}
+\underline{Answer any four of the following questions} 
+\begin{questions}
+    \question Define differential equation, partial differential equation, linear differential equation, order and degree of a differential equation with example. \hfill (5)
+    \question When the differential equation $M(x,y)dx + N(x,y)dy = 0$ said to be exact? Solve the differential equation $(x^2+y^2+1)dx - 2xydy = 0$. \hfill (5)
+    \question Define homogeneous differential equation. Solve the differential equation \hfill (5)
+    $$\dfrac{dy}{dx}=\dfrac{x+2y-3}{2x+y-3}$$
+    \question State the existence and uniqueness theorem. Does a unique solution of the IVP $y' = 3y^{\frac{2}{3}}, y(1) = 0$ exist? If the solution exists, then find the solution. \hfill (5)
+    \question Define integrating factor (I.F). Solve the differential equation $y\ln ydx + (x-\ln y)dy = 0$ \hfill (5)
+\end{questions}
+
+\end{document}
