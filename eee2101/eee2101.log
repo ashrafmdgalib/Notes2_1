@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.23)  22 AUG 2025 02:32
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.23)  22 AUG 2025 02:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/mdgalibashraf/Documents/Notes2_1/eee2101.tex
-(/Users/mdgalibashraf/Documents/Notes2_1/eee2101.tex
+**/Users/mdgalibashraf/Documents/Notes2_1/eee2101/eee2101.tex
+(/Users/mdgalibashraf/Documents/Notes2_1/eee2101/eee2101.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/report.cls
@@ -927,11 +927,11 @@ Package rerunfilecheck Info: File `eee2101.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  48000 strings out of 474773
- 1154108 string characters out of 5757724
+ 1154132 string characters out of 5757724
  1935839 words of memory out of 5000000
  69557 multiletter control sequences out of 15000+600000
  565785 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 102i,13n,107p,467b,883s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,13n,107p,475b,883s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on eee2101.xdv (12 pages, 153520 bytes).
+Output written on eee2101.xdv (12 pages, 153580 bytes).

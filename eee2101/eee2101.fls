@@ -1,8 +1,8 @@
-PWD /Users/mdgalibashraf/Documents/Notes2_1
+PWD /Users/mdgalibashraf/Documents/Notes2_1/eee2101
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt
-INPUT /Users/mdgalibashraf/Documents/Notes2_1/eee2101.tex
+INPUT /Users/mdgalibashraf/Documents/Notes2_1/eee2101/eee2101.tex
 OUTPUT eee2101.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/report.cls

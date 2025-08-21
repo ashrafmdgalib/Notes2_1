@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1755808353.55604 "eee2101.xdv" "eee2101.pdf" "eee2101" 1755808353.81412 0
-  "eee2101.xdv" 1755808353.50529 153520 4588e2124b89ee9e46bd442a2006327d "xelatex"
+["xdvipdfmx"] 1755808954.07191 "eee2101.xdv" "eee2101.pdf" "eee2101" 1755808954.32555 0
+  "eee2101.xdv" 1755808954.01912 153580 74c92eb0e7eca67a466f5bd8b59b6e17 "xelatex"
   (generated)
   "eee2101.pdf"
   (rewritten before read)
-["xelatex"] 1755808352.59461 "/Users/mdgalibashraf/Documents/Notes2_1/eee2101.tex" "eee2101.xdv" "eee2101" 1755808353.81249 0
-  "/Users/mdgalibashraf/Documents/Notes2_1/eee2101.tex" 1755808351.34334 23586 205dbf3f239000010467536e3257de0d ""
+["xelatex"] 1755808953.03646 "/Users/mdgalibashraf/Documents/Notes2_1/eee2101/eee2101.tex" "eee2101.xdv" "eee2101" 1755808954.32386 0
+  "/Users/mdgalibashraf/Documents/Notes2_1/eee2101/eee2101.tex" 1755808952.85036 23592 6061d442d121ee95ab293a4208868ab8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -225,10 +225,10 @@
   "/usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf" 1708706663 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "/usr/local/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1727030809 10850162 97182de31d1e77244b945eb79126344a ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "eee2101.aux" 1755808353.50441 1244 a7610122ffba796433eaed349b1da137 "xelatex"
-  "eee2101.out" 1755808353.50507 1556 a22cda092b912baa1fa514dd91f3e7de "xelatex"
-  "eee2101.tex" 1755808351.34334 23586 205dbf3f239000010467536e3257de0d ""
-  "eee2101.toc" 1755808353.50525 688 2c82c306c4d1767c47dbef17d02ebfe8 "xelatex"
+  "eee2101.aux" 1755808954.01821 1244 a7610122ffba796433eaed349b1da137 "xelatex"
+  "eee2101.out" 1755808954.01891 1556 a22cda092b912baa1fa514dd91f3e7de "xelatex"
+  "eee2101.tex" 1755808952.85036 23592 6061d442d121ee95ab293a4208868ab8 ""
+  "eee2101.toc" 1755808954.01909 688 2c82c306c4d1767c47dbef17d02ebfe8 "xelatex"
   "logo.du.png" 1742327957.09488 14376 1dda46714ffcae41cf9c5a9bc05f2b58 ""
   (generated)
   "eee2101.aux"
