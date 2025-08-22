@@ -243,6 +243,10 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/forloop/forloop.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/forloop/forloop.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mhchem/mhchem.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/mhchem/mhchem.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty

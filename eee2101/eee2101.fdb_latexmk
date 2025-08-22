@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1755809596.46159 "eee2101.xdv" "eee2101.pdf" "eee2101" 1755809596.70737 0
-  "eee2101.xdv" 1755809596.4078 153520 9b3c0ec9337eeb9137c9157680f50e3e "xelatex"
+["xdvipdfmx"] 1755844931.6414 "eee2101.xdv" "eee2101.pdf" "eee2101" 1755844931.8899 0
+  "eee2101.xdv" 1755844931.5873 297084 9071dfabc5c5ecc32b5594e050618a0e "xelatex"
   (generated)
   "eee2101.pdf"
   (rewritten before read)
-["xelatex"] 1755809595.4527 "/Users/mdgalibashraf/Documents/Notes2_1/eee2101/eee2101.tex" "eee2101.xdv" "eee2101" 1755809596.70567 0
-  "/Users/mdgalibashraf/Documents/Notes2_1/eee2101/eee2101.tex" 1755809595.0362 23587 0580939d1afb763a69abeae33b482b6c ""
+["xelatex"] 1755844930.41589 "/Users/mdgalibashraf/Documents/Notes2_1/eee2101/eee2101.tex" "eee2101.xdv" "eee2101" 1755844931.8883 0
+  "/Users/mdgalibashraf/Documents/Notes2_1/eee2101/eee2101.tex" 1755844928.98197 27604 67eb9cd2a2396ec4559ba2bf5711163e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -140,6 +140,7 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty" 1576625391 3935 57aa3c3e203a5c2effb4d2bd2efbc323 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty" 1705352648 3045 273c666a54e60b9f730964f431a56c1b ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty" 1705352648 2462 6bc53756156dbd71c1ad550d30a3b93f ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty" 1705352648 5319 2b738d02ce36ada6dcdd9534940db0ee ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/report.cls" 1705352648 23203 f5d913095ece2233436f0e628619cd37 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/size12.clo" 1705352648 8449 f07039d8e4e89f21078d9b5137579bfc ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd" 1705352648 2430 fce77d7e103eb98b6c4d486ae1d466c0 ""
@@ -153,6 +154,7 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1668028059 18450 88279bf67c81e69f8e3f1c1bad1a26c5 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty" 1705955721 43712 c3d93734f3bc56e03c21b3dc69268d3c ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/fncychap/fncychap.sty" 1292029257 19488 fdd52eb173b3197d748e1ec25acb042f ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/forloop/forloop.sty" 1683232158 1720 8470a0e13fbd4c8d2cc96497e30c2ec0 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
@@ -225,10 +227,10 @@
   "/usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf" 1708706663 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "/usr/local/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1727030809 10850162 97182de31d1e77244b945eb79126344a ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "eee2101.aux" 1755809596.40687 1244 a7610122ffba796433eaed349b1da137 "xelatex"
-  "eee2101.out" 1755809596.40756 1556 a22cda092b912baa1fa514dd91f3e7de "xelatex"
-  "eee2101.tex" 1755809595.0362 23587 0580939d1afb763a69abeae33b482b6c ""
-  "eee2101.toc" 1755809596.40775 688 2c82c306c4d1767c47dbef17d02ebfe8 "xelatex"
+  "eee2101.aux" 1755844931.58631 1244 b90a5da7dfc24658fcfb462cf42ebc0e "xelatex"
+  "eee2101.out" 1755844931.58705 1556 a22cda092b912baa1fa514dd91f3e7de "xelatex"
+  "eee2101.tex" 1755844928.98197 27604 67eb9cd2a2396ec4559ba2bf5711163e ""
+  "eee2101.toc" 1755844931.58726 688 2c82c306c4d1767c47dbef17d02ebfe8 "xelatex"
   "logo.du.png" 1742327957.09488 14376 1dda46714ffcae41cf9c5a9bc05f2b58 ""
   (generated)
   "eee2101.aux"
