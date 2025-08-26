@@ -116,7 +116,7 @@ Equations}
          \noindent\textbf{Course: MAT-2101} \\ 
         \textbf{Title: Ordinary and Partial Differential
 Equations}\\
-        Class Techer: Md. Motaleb Hossen\\
+        Class Teacher: Md. Motaleb Hossen\\
     \end{Large}
     \vspace{0.5cm}
     \begin{center}
@@ -310,7 +310,7 @@ y = \frac{x^2}{2} + C
             samples=1000,
             xlabel={$x$},
             ylabel={$y$},
-            xmin=-3,xmax=3,
+            xmin=-5,xmax=5,
             ymin=-2,ymax=4]
 
 \node[anchor=center,label=south west:$O$] at (axis cs:0,0){};
@@ -326,8 +326,8 @@ y = \frac{x^2}{2} + C
 \end{center}
 A solution of a DE obtained from a general solution by giving a particular values to one or more arbitrary constants is called a particular solution of the DE (1.1).
 \vspace{5pt}
-\begin{tcolorbox}[breakable, title = {\textbf{Example : }}]
-    Example: The general solution of \( \frac{dy}{dx} = x \) is 
+\begin{tcolorbox}[breakable, title = {\textbf{Example 1.4:}}]
+   The general solution of \( \frac{dy}{dx} = x \) is 
 $
 y = \frac{x^2}{2} + C
 $
@@ -349,12 +349,10 @@ y = e^x + e^{2x} \quad \text{is a particular solution (PS)} \,\,\, y'' - 4y + 2y
 \noindent \textbf{Singular Solution} \\ [5pt]
 A solution of a differential equation which cannot be obtained from any general solution of (1.1) by any choice of the n arbitrary constants is called a singular solution of the DE(1.1).
 
-\begin{tcolorbox}[breakable, title = {\textbf{Example : }}]
-    
-\end{tcolorbox}
-\textbf{Example:}
-
-The relation \( y = (c + x)^2 \) is the general solution of the differential equation:
+\begin{tcolorbox}[breakable, title = {\textbf{Example 1.5: Find the singular and general solution of the D.E. \(
+\left( \dfrac{dy}{dx} \right)^2 - 4y = 0
+\) }}]
+    The relation \( y = (c + x)^2 \) is the general solution of the differential equation:
 \[
 \left( \frac{dy}{dx} \right)^2 - 4y = 0
 \]
@@ -370,36 +368,36 @@ The relation \( y = (c + x)^2 \) is the general solution of the differential equ
 \Rightarrow \left( \frac{dy}{dx} \right)^2 - 4y = 0
 \]
 
-%Here, $\( y = 0 \)$  is a singular solution of the differential equation $\left( \frac{dy}{dx} \right)^2 - 4y = 0$
+Here, \( y = 0 \)  \text{ is a singular solution of the differential equation} $\left( \frac{dy}{dx} \right)^2 - 4y = 0$
 Since we cannot obtain this solution \( y = 0 \) by using any value of \( c \) in the general solution \( y = (c + x)^2 \).
-
-\begin{tcolorbox}[breakable, title = {\textbf{Example : }}]
-    
 \end{tcolorbox}
-\vspace{1em}
- Example :
-\[
-x^2 + y^2 = 5
+\begin{tcolorbox}[breakable, title = {\textbf{Example 1.6: Find a D.E. from its singular solution.} }]
+  \[
+x^2 + y^2 = 25
 \]
 \[
 \Rightarrow 2x + 2y \frac{dy}{dx} = 0
 \]
 \[
 \quad \Rightarrow \boxed{\quad x + y \frac{dy}{dx} = 0 } \longrightarrow \text{The DE is formed by this relation.}
-\]
+\]  
+\end{tcolorbox}
+\vspace{1em}
+
+
 
 \vspace{1em}
+\newpage
 \noindent\textbf{ Family of Curves} \\ [5pt]
 
 An \( n \)-parameter family of curves is a set of relations of the form:
 \[
 \{f(x,y) : f(x, y, c_1, c_2, \ldots, c_n) = 0\}
 \]
- where \( f \) is a real-valued function of  \(x, y, c_1, c_2, \ldots, c_n\) and \( c_i \in \mathbb{R} \).
-\begin{tcolorbox}[breakable, title = {\textbf{Example : }}]
-    
-\end{tcolorbox}
-Example:
+ where \( f \) is a real-valued function of  \(x, y, c_1, c_2, \ldots, c_n\) and \( c_i \in \mathbb{R} \)
+ .
+\vspace{1em}
+\\ {\textbf{Example:}}
 \par $x^2 + y^2 = c^2$ is a family of curves (specifically, concentric circles) for different values of \( c \). 
 \begin{center}
     \begin{tikzpicture}[scale=0.7]
@@ -418,7 +416,7 @@ Suppose we are given a \( n \)-parameter family of curves. Then there will be \(
 Differential the given equation of the family of curves \( n \) times so as to get the \( n \) additionals equation containing n arbitrary constant and derivatives.Then eliminate the n arbitrary constant to get the required DE.
 
 \vspace{1em}
-\begin{tcolorbox}[breakable, title = {\textbf{Example : }Find the D.E of the relation $y = Ae^{2x} + Be^{-2x} $, where A, B are constants.}]
+\begin{tcolorbox}[breakable, title = {\textbf{Example 1.7: Find the D.E of the relation $y = Ae^{2x} + Be^{-2x} $, where A, B are constants.}}]
     \textbf{Solution : }
 \[
 y = Ae^{2x} + Be^{-2x}
@@ -433,7 +431,7 @@ y = Ae^{2x} + Be^{-2x}
 
 \end{tcolorbox}
 
- \begin{tcolorbox}[breakable, title = {\textbf{Example : }Find the DE of the relation \( y = (c + x)^2 \)}]
+ \begin{tcolorbox}[breakable, title = {\textbf{Example 1.8: Find the DE of the relation \( y = (c + x)^2 \)}}]
     \textbf{Solution : }
 
 \[
@@ -473,6 +471,8 @@ Example:
     3 &= e^{(0+c)} = e^c \\ 
     \text{So, }y &= 3e^x
 \end{align*}
-
+\begin{flushright}
+    {\small \textbf{End of Class 01 (12 Aug,2025)}}
+\end{flushright}
 
 \end{document}

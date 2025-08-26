@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.23)  22 AUG 2025 02:33
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.23)  26 AUG 2025 15:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/mdgalibashraf/Documents/Notes2_1/mat2101.tex
-(/Users/mdgalibashraf/Documents/Notes2_1/mat2101.tex
+**/Users/mdgalibashraf/Documents/Notes2_1/mat2101/mat2101.tex
+(/Users/mdgalibashraf/Documents/Notes2_1/mat2101/mat2101.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/report.cls
@@ -1038,7 +1038,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 392--393
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
 
  []
 
@@ -1049,16 +1057,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[5]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 459--460
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
 
  []
 
@@ -1078,12 +1078,12 @@ Package rerunfilecheck Info: File `mat2101.out' has not changed.
 (rerunfilecheck)             Checksum: 300DB0A1F2460929F20506C4FB21BDE5;156.
  ) 
 Here is how much of TeX's memory you used:
- 61409 strings out of 474773
- 1594697 string characters out of 5757724
- 3069308 words of memory out of 5000000
- 82645 multiletter control sequences out of 15000+600000
+ 61408 strings out of 474773
+ 1594705 string characters out of 5757724
+ 3067431 words of memory out of 5000000
+ 82644 multiletter control sequences out of 15000+600000
  565140 words of font info for 77 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 102i,12n,107p,1215b,2155s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,12n,107p,1223b,2155s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mat2101.xdv (11 pages, 275844 bytes).
+Output written on mat2101.xdv (11 pages, 275284 bytes).
