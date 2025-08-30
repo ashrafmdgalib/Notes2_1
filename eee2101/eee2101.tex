@@ -199,14 +199,14 @@ Increased Bandwidth, Forms of Negative Feedback, Practical Feedback Circuits.
 \chapter{PN Junction Diode and Diode Circuits}
 \vspace*{-20pt}
 \section{Semiconductor Materials}
-\textbf{Conductor: }The term conductor is used for any material that will support generous flow of charge when the voltage is applied across its terminals. \\ [3pt]
-\textbf{Insulator: }An insulator is a material that offers very low conductivity when voltage is applied. \\ [3pt]
+\textbf{Conductor: }The term conductor is used for any material that will support generous flow of charge when the voltage is applied across its terminals. Ex:Cu,Al etc. \\ [3pt]
+\textbf{Insulator: }An insulator is a material that offers very low conductivity when voltage is applied. Ex : Mica,Rubber,Wood etc. \\ [3pt]
 \textbf{Semiconductor: }It is a material that has conductivity more than insulators but less than the conductor. Ex: \ce{Si, Ge} \\ [10pt]
 \textbf{\large Resistivity and Conductivity}
 $$\rho = \dfrac{1}{\sigma} = \dfrac{RA}{L}$$
 \hspace*{5cm}Where, 
 \begin{adjustwidth}{6.5cm}{0pt}
-    $\rho$ = Resistivity \\
+    $\rho$ = Resistivity\,\,\,\,[Its a property of material] \\
     $\sigma$ = Conductivity \\
     A = Area of the cross-section\\
     R = Resistance \\ 
@@ -266,7 +266,37 @@ Here,
 \begin{itemize}
     \item They are the pure semiconductors. No other atoms included. 
     \item Free electrons are only due to natural causes. 
+    \item  At $ T=0K$ temperature, all bonds are intact, with no free
+electrons for conduction.
+    \item At $T\neq 0K$,some covalent bonds  break where a broken covalent bond frees
+an electron, allowing it to move and conduct
+current when an electric field is applied.
 \end{itemize}
+\begin{questionbox}[Why do we bother with the concept of the hole?]
+    We bother with holes because they simplify the description of current flow in semiconductors. Instead of tracking billions of electrons in the valence band, we treat the absence of one electron as a positive charge carrier. This makes equations (like drift current, diffusion current, pn-junction equations, etc.) symmetric and elegant.Device physics depends on holes (like PN junctions (diodes), BJTs) many modern devices rely on the interaction of electrons and holes.
+$$\text{Current in a diode} = \text{electrons injected one way} + \text{holes injected the other way}$$
+Even though holes are “not real,” they behave as if they are real positive particles.
+They have measurable mobility, effective mass, and contribute to measurable current density.
+Hall-effect experiments even let us measure whether the dominant carriers are electrons or holes (n-type vs. p-type).
+\\ So holes are not imaginary $-$ they are a useful quasi-particle.
+\end{questionbox}
+\vspace{1em}
+\begin{questionbox}[ Why are holes slower than electron?]
+    Holes are slower than electrons because they have a larger effective mass and experience more scattering in the valence band.Electrons occupy the conduction band, which has a simpler, parabolic energy-momentum relation.The E$-$k relation (energy vs. crystal momentum):
+    \[
+    \frac{1}{m^*}=\frac{1}{\hbar ^2}\dfrac{dE^2}{dk^2}
+    \]
+    \begin{itemize}
+        \item If the band is very curved (steep parabola) $\rightarrow \dfrac{dE^2}{dk^2}$
+ is large $\rightarrow$ small effective mass.
+ \item If the band is flatter (gentle parabola)   $\rightarrow \dfrac{dE^2}{dk^2}$ is small $\rightarrow$ large effective mass.
+    \end{itemize}
+    For $e^-$ effective mass is small $\rightarrow$ they accelerate easily.
+
+On the other hand holes are in the valence band, which is more complex (split into heavy-hole and light-hole bands). The average effective mass of holes is larger. Bigger effective mass $\rightarrow$ lower mobility.Again holes interact more strongly with the crystal lattice because of their complex band structure.
+
+This increases collisions (phonon and impurity scattering), reducing their mobility further. %This gives them lower mobility compared to electrons in the conduction band.
+\end{questionbox}
 \textbf{\large Extrinsic Semiconductor}
 \begin{itemize}
     \item Impurity atoms are added.
@@ -311,7 +341,10 @@ Here,
 
 
 \section{Mass Action Law}
-\textbf{Statement: }Under thermal equilibrium, the product of the free electrons concentration and the free hole concentration is equal to a constant to the square of intrinsic carrier concentration. 
+\textbf{Statement: }Under thermal equilibrium, the product of the free electrons concentration and the free hole concentration is equal to a constant to the square of intrinsic carrier concentration.\\
+In Intrinsic Semiconductor, \\
+\hspace*{4cm}no of $e^-$ = no of holes\\
+\hspace*{4cm}$n = p = n_i$
 \begin{center}
     \begin{tabular}{c|l}
         \multirow{3}{*}{$n.p={n_i}^2$} \quad &  \quad $n = $ Free electron concentration \\ 
@@ -319,11 +352,17 @@ Here,
         & \quad $n_i =$ Intrinsic Carrier Concentration
     \end{tabular}
 \end{center}
-In Intrinsic Semiconductor, \\
-\hspace*{5cm} no of $e^-$ = no of holes
-$$n = p = n_i$$
 
-
+\underline{Prove :}\\
+ Because of thermal energy ,the $e^-$ will break the covalent bond and participate in conduction leaving the hole behind and generate charge carriers.
+ Under the thermal equilibrium.\\
+ \hspace*{3cm}Rate of Generation = Rate of Recombination\\
+ $$G=R$$
+ 
+ \[R\propto n \]
+ \[R\propto p \]
+\[R=rnp \text{\hspace*{1cm} [r $\rightarrow$ Recombination constant]}\] 
+In intrinsic semiconductor, $G=rn_i^2$. Dopping in intrinsic semiconductor is not affected by the generation of holes or electrons.
 \section{Charge Density in a Semiconductor}
 \begin{itemize}
     \item Electrical neutrality is satisfied by semiconductor also. $$\text{total \begin{tikzpicture}
@@ -446,7 +485,7 @@ $$n = p = n_i$$
         $e = $ Charge of a $e^-$ \\ 
         $e.m = $ Effective Mass 
         $$\mu \propto \dfrac{1}{e.m}$$
-        $$e.m hole >> e.m e^- \qquad \mu_p << mu_n$$
+        $$e.m.\,\, of \,\, hole >> e.m. \,\,of \,\,e^- \qquad \mu_p << \mu_n$$
 
     \end{minipage}
 \end{center}
@@ -475,25 +514,110 @@ We know that,
             $\mu_p = 1800cm^2/V.s$ &\hspace*{16pt} $N_{ge}=4.41 \times 10^{22}/cm^3$ 
         \end{tabular}
     \end{adjustwidth} }]
-    
+    Given,\\
+    \begin{adjustwidth}{1cm}{3pt}
+Mobility of free electron: $\mu_n=3800\,\text{cm}^2/\text{V·s}$ \par
+Mobility of holes: $\mu_p=1800\,\text{cm}^2/\text{V·s}$ \par
+Concentration of intrinsic charge carrier: $n_i=2.5\times10^{13}\,\text{cm}^{-3}$ \par
+No of Germanium $e^-$ per atom: $N_{Ge}=4.41\times10^{22}\,\text{cm}^{-3}$ 
+\end{adjustwidth}
+
+For doping semiconductor,
+\[
+N_D=\frac{N_{Ge}}{\text{Extent electron per atom}}
+=\frac{4.41\times 10^{22}}{10^{8}}
+=4.41\times 10^{14}\,\text{cm}^{-3}
+\]
+
+
+$n=N_D=4.41\times 10^{14}\,\text{cm}^{-3}$
+
+
+\[
+p=\frac{n_i^2}{n}
+=\frac{(2.5\times10^{13})^2}{4.41\times 10^{14}}
+=1.51\times10^{12}\,\text{cm}^{-3}
+\]
+
+We know,
+\[
+\rho=\frac{1}{\sigma}
+=\frac{1}{(n\mu_n+p\mu_p)e}
+\]
+
+\[
+=\frac{1}{\left(4.41\times 10^{14}\times3800
++1.51\times 10^{12}\times1800\right)\times 1.6\times10^{-19}}
+\]
+
+\[
+=3.723\,\Omega\cdot\text{cm}
+\]
+
 \end{tcolorbox}
-\begin{tcolorbox}[breakable, title = {\textbf{Question 1.2: }Consider an intrinsic silicon bar of cross-section $5 cm^2$ and length $0.5cm$ at room temperature 300K. An average field of $20 V/cm$ is applied across the ends of the silicon bar. \\ [5pt]
+\begin{tcolorbox}[breakable, 
+    title = {\textbf{Question 1.2: }Consider an intrinsic silicon bar of cross-section $5\,\text{cm}^2$ and length $0.5\,\text{cm}$ at room temperature 300K. An average field of $20\,\text{V/cm}$ is applied across the ends of the silicon bar. \\[5pt]
     Calculate: 
     \begin{adjustwidth}{1cm}{5pt}
-        a) Electron and hole components of current density. \\ 
-        b) Total current in the bar. \\ 
+        a) Electron and hole components of current density.\par
+        b) Total current in the bar.\par
         c) Resistivity of the bar. 
     \end{adjustwidth}
     Given, 
     \begin{adjustwidth}{1cm}{5pt}
         \begin{tabular}{ll}
-            $\mu_n=1400cm^2/V.s$ & \hspace*{20pt}$n_i = 1.5\times 10^{10}/cm^3$ \\
-            $\mu_p = 450cm^2/V.s$ 
+            $\mu_n=1400\,\text{cm}^2/\text{V·s}$ & \hspace*{20pt}$n_i = 1.5\times 10^{10}/\text{cm}^3$ \\
+            $\mu_p = 450\,\text{cm}^2/\text{V·s}$ 
         \end{tabular}
-    \end{adjustwidth} }]
+    \end{adjustwidth}
+}]
+
+Given,
+\begin{adjustwidth}{1cm}{3pt}
+    No of intrinsic charge carrier $n_i=1.5\times 10^{10}/\text{cm}^3$\par
+    charge $q=1.6\times10^{-19}C$\par
+    Electric field $E=20\,Vcm^{-1}$\par
+    Mobility of holes $\mu_p = 450\,\text{cm}^2/\text{V·s}$\par 
+Mobility of electron $\mu_n=1400\,\text{cm}^2/\text{V·s}$ \par
+charge density of holes $J_p=?$\par
+Charge density of electron $J_n=?$
+\end{adjustwidth}
+\vspace{1em}
+(a) We know,
+\[
+J_n=\mu_n nqE
+=1400\times 1.5\times 10^{10}\times1.6\times10^{-19}\times20
+=6.72\times10^{-5}\,\, Acm^{-2}
+\]
+\[
+J_p=\mu_p nqE
+=450\times 1.5\times 10^{10}\times1.6\times10^{-19}\times20
+=2.16\times10^{-5}\,\, Acm^{-2}
+\]
+(b)We know \par
+\[
+J_{total}=J_n+J_p
+\]
+\[
+=6.72\times10^{-5}+2.16\times10^{-5}  Acm^{-2} \]
+\[=8.8827\times10^{-5}  Acm^{-2}
+\]
+Now,
+\[
+I=JA=8.8827\times10^{-5}\times5 \,\,A=444.1 \,\,\mu A
+\]
+(c)We know\par
+\[
+\rho=\frac{1}{\sigma}=\frac{1}{(n\mu_n+p\mu_p)e}\]
+\[=\frac{1}{(1.5\times 10^{10}\times 1400 + 1.5\times 10^{10}\times 450)\times 1.6\times 10^{-19}}
+\]
+\[
+=2.25\times10^{5}\Omega\cdot cm
+\]
 
 \end{tcolorbox}
 
+    
 
 
 \section{PN Junction Diode (No Applied Bias)}
@@ -556,7 +680,7 @@ We know that,
     \end{itemize}
     \item Diffusion current $\longrightarrow$ because of Majority Charge Carrier 
     \item Immobile ions will surface out because of diffusion, it it depletion region. 
-    \item Depletion Region/Space Charge Region: No mobile charge but only uncovered immobile ions. 
+    \item Depletion Region/Space Charge Region/ Depletion Layer : No mobile charge but only uncovered immobile ions. 
     \item Width of depletion region is \textbf{fixed}.
     \item Drift current $\longrightarrow$ because of Minority Charge Carrier 
     \item Diffusion current have the opposite direction of drift current.
@@ -690,8 +814,8 @@ Width of Depletion Region,
 \end{center}
 \begin{itemize}
     \item For \ce{Si}\begin{itemize}\vspace*{-7pt}
-        \item $\varepsilon = 1.04\times 10^{-12}F/cm$
-        \item $0.1\mu m < W_d < 1\mu m$
+        \item[*] $\varepsilon = 1.04\times 10^{-12}F/cm$
+        \item[*] $0.1\mu m < W_d < 1\mu m$
     \end{itemize}
     \item For \ce{Ge}, $\varepsilon = 1.12448\times 10^{-12}F/cm$
 \end{itemize}
@@ -718,6 +842,4 @@ Width of Depletion Region,
         &= 0.3290 \mu\text{m}
     \end{align*}
 \end{tcolorbox}
-
-12345
 \end{document}
