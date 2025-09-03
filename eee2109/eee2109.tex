@@ -64,7 +64,7 @@
 
         \noindent\textbf{Course: EEE-2109} \\ 
         \textbf{Title: Signals and Systems}\\
-        Class Techer: Md. Shahin Parvej\\
+        Class Techer: Dr. Z. M. Parvez Sazzad\\
     \vspace{0.5cm}
     \begin{center}
             Note by \\
@@ -99,4 +99,174 @@
 \newpage
 \setcounter{page}{1}
 \chapter{Signals}
+\section{Introduction}
+\textbf{Signal : }Signal is a function of one or more independent variables that
+carries information (usually through amplitude, phase,
+frequency and position etc.) about the behavior of the
+physical variable/phenomenon.
+\[
+F(x_1,x_2,x_3,\cdots\cdots,x_n)
+\]
+Here,\par
+ F $\longrightarrow$ Signal\par
+$x_1,x_2,x_3,\cdots, x_n \longrightarrow$ independent variable\par
+\begin{itemize}
+    \item Anything which is constant is not a signal.
+    \item AC$\rightarrow$Signal,DC $\rightarrow$ Not a signal.
+    
+\end{itemize}
+\textbf{\large Types of Signal :}\par
+There are two types of signal.
+\begin{enumerate}
+    \item [(i)]Single variable signal : Depends on one independent variable.\\
+\underline{Example :} $f(x),g(t)$
+\item[(ii)] Multi-variable signal : Depends on more than one independent variable.\\
+\underline{Example :} $f(x_1,x_2),g(t_1,t_2,t_3)$
+
+\end{enumerate}
+\textbf{System :} The meaningfull interaction of physical devices and components is called as system.
+\begin{itemize}
+    \item System alone can't achieve anything,it must link with signal.
+    $$ i/p \longrightarrow \boxed{\text{System}}\longrightarrow o/p $$
+    \item i/p signal $\longrightarrow f(x_1,x_2) $\\
+    \item o/p signal $\longrightarrow g(x_1,x_2) $
+     Both are same independent variable.
+\end{itemize}
+
+\begin{minipage}{.45\linewidth}
+    For Analysis problem, \par
+    i/p signal and system are given.Find out o/p signal.
+
+\end{minipage}\hspace{25pt}
+\begin{minipage}{.45\linewidth}
+    For Synthesis problem,\par
+    i/p signal and o/p are given.Find out system of the signal.
+
+\end{minipage}
+
+
+\section{Continuous and Discrete Time Signals}
+\textbf{Continuous Time Signal(CTS) : }Specified for every value of time $t$.\\
+\underline{Example}\\
+
+%figure 
+
+\textbf{Discrete Time Signal (DTS) :} Specified at discrete time intervals.\\
+\underline{Example:}\\
+
+%figure
+
+\textbf{Uniform Discrete Time Signal :} where every time interval is same.
+$$ \Delta t=T $$
+\underline{Example :}
+
+% figure
+
+\subsection{Addition of CTS }
+
+
+\subsection{Multiplication of CTS}
+
+\section{Scaling of CTS}
+There are two types of scaling in CT signal.
+\begin{enumerate}
+    \item Time scaling.
+    \item Amplitude scaling.
+\end{enumerate}
+\textbf{1.Time scaling :} The compression or expansion of a signal in time.\par
+\[ x(t) \xrightarrow{\text{T.Sc}} y(t)=x(\alpha t) \]
+\textbf{Case-1}
+\[
+|\alpha| > 1 \longrightarrow \alpha\in (-\infty,-1]\cup[1,\infty)
+\]
+
+%graph
+This is the case of compression.\\
+\textbf{Case-2}
+\[
+|\alpha|<1 \longrightarrow \alpha \neq 0 \quad \quad[\alpha=-0.3,-0.2,-0.1,-0.099 \cdots\cdots 0.1,0.2,0.3]
+\]
+
+%graph
+
+This is the case of expansion.\\
+\underline{Shortcut} 
+\begin{itemize}
+    \item Amplitude remain same.
+    \item Times are divided by $\alpha$.
+\end{itemize}
+\textbf{2.Amplitude Scaling :} The increased and decreased of a signal in time.
+\[
+x(t)\xrightarrow{A.Sc} y(t)=\beta x(t)
+\]
+\textbf{Case-1}
+\[
+|\beta | >1 \longrightarrow \beta \in(-\infty,-1]\cup [1,\infty)
+\]
+
+%graph
+
+Thsi is the case of amplitude expansion.\par
+\textbf{Case-2}
+\[
+|\beta|<1 \longrightarrow \beta \in (-1,0)\cup (0,1)
+\]
+
+%graph
+
+This is the case of amplitude reduction.
+\section{Shifting of CTS}
+There are two types of shifting in CT signal.
+\begin{enumerate}
+    \item Time shifting.
+    \item Amplitude shifting.
+\end{enumerate}
+\textbf{1.Time Shifting : }Time shifting means shifting a signal in time, either forward (delay) or backward (advance), without changing its shape.
+\[
+x(t)\xrightarrow{T.Sf} y(t)=x(t+K)
+\]
+\textbf{Case-1} $k>0$\\
+%graph
+This is the case of left shifting or time advanced.\\
+\textbf{Case-2 } $K<0$\\
+%graph
+This is the case of right shifting or time delay.\\
+\textcolor{red}{Advancing time signal is not possible in real life.}\\
+\textbf{2.Amplitude Shifting :} Amplitude shifting means adding or subtracting a constant value to the signal’s amplitude, which shifts it vertically up or down on the graph.\\
+\[
+x(t)\xrightarrow{A.Sf} y(t)=x(t)+l
+\]
+\textbf{Case-1} $l>0$\\
+%graph
+This is the case of upward shifting.\\
+\textbf{Case-2} $l<0$\\
+%graph
+This is the case of downward shifting.\\
+\section{Folding/Reversal of CTS }
+\textbf{1.Time Reversal :} Time reversal means flipping a signal across the vertical axis (t = 0 line).It inverse signal in time.\\
+\[
+x(t)\xrightarrow{T.Sc} y(t)=x(\alpha t)
+\]
+\[
+x(t)\xrightarrow[\alpha=-1]{T.R} y(t)=x(-t)
+\]
+%graph
+This is the special case of time scaling with $\alpha=-1$.It is also called as folding or reflection.\\
+\textbf{2.Amplitude Reversal :} Amplitude reversal means flipping a signal across the horizontal axis (amplitude axis).
+It changes the sign of the amplitude values.
+\[
+x(t)\xrightarrow{A.Sc} y(t)=\beta x(t)
+\]
+\[
+x(t)\xrightarrow[\beta=-1]{A.R} y(t)= -x(t)
+\]
+This is the special case of amplitude scaling with $\beta=-1$.It is fold signal with respect to Y-axis.
+
+\section{Multiple Transformation Of CTS}
+\[
+    x(t)\longrightarrow \boxed{\textsl{System}}\longrightarrow y(t)
+\]
+\begin{tcolorbox}[breakable, title=Problem 1. Draw the signal $y(t)=3x(2t+3)$]
+    
+\end{tcolorbox}
 \end{document}
