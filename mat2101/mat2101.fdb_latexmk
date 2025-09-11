@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1757616614.36934 "mat2101.xdv" "mat2101.pdf" "mat2101" 1757616614.61973 0
-  "mat2101.xdv" 1757616614.30402 280844 820e3c1159813d50d68bc7b022ce148e "xelatex"
+["xdvipdfmx"] 1757617136.23452 "mat2101.xdv" "mat2101.pdf" "mat2101" 1757617136.62775 0
+  "mat2101.xdv" 1757617136.16582 280828 dc26d5ab3f3d8ce756862f062a4f0339 "xelatex"
   (generated)
   "mat2101.pdf"
   (rewritten before read)
-["xelatex"] 1757616612.01758 "/Users/mdgalibashraf/Documents/Notes2_1/mat2101/mat2101.tex" "mat2101.xdv" "mat2101" 1757616614.61734 0
-  "/Users/mdgalibashraf/Documents/Notes2_1/mat2101/mat2101.tex" 1757616611.84706 20280 512cc7ae8582c436261ec027cfaa8d43 ""
+["xelatex"] 1757617133.76664 "/Users/mdgalibashraf/Documents/Notes2_1/mat2101/mat2101.tex" "mat2101.xdv" "mat2101" 1757617136.62536 0
+  "/Users/mdgalibashraf/Documents/Notes2_1/mat2101/mat2101.tex" 1757617133.56822 20278 9a611a65d68071b420af8f04b15f3a88 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -327,10 +327,10 @@
   "/usr/local/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1727030809 10850162 97182de31d1e77244b945eb79126344a ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "logo.du.png" 1742327957.09488 14376 1dda46714ffcae41cf9c5a9bc05f2b58 ""
-  "mat2101.aux" 1757616614.30312 347 9b4a8fa39d295e98d362bb2c6feae200 "xelatex"
-  "mat2101.out" 1757616614.30381 156 300db0a1f2460929f20506c4fb21bde5 "xelatex"
-  "mat2101.tex" 1757616611.84706 20280 512cc7ae8582c436261ec027cfaa8d43 ""
-  "mat2101.toc" 1757616614.30398 78 a6a14ab6310e7bc3aaa54d957d275241 "xelatex"
+  "mat2101.aux" 1757617136.16497 347 9b4a8fa39d295e98d362bb2c6feae200 "xelatex"
+  "mat2101.out" 1757617136.16563 156 300db0a1f2460929f20506c4fb21bde5 "xelatex"
+  "mat2101.tex" 1757617133.56822 20278 9a611a65d68071b420af8f04b15f3a88 ""
+  "mat2101.toc" 1757617136.16579 78 a6a14ab6310e7bc3aaa54d957d275241 "xelatex"
   (generated)
   "mat2101.aux"
   "mat2101.log"
