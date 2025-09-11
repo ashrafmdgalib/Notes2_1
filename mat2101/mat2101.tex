@@ -446,14 +446,14 @@ y = (c + x)^2
     \begin{enumerate}
     \item Find the D.E of the family of curves $y=e^x(A\cos x+B\sin x)$ where $A$ and $B$ are constants. 
     \item Find the D.E for the family of curves $xy=c^{(3cx-1)}$
-    \item Verify that 
+    \item Verify that \vspace*{-10pt}
     \begin{enumerate}
         \item $\,\,y=c_1e^{2x}+c_2e^{2x}$ is a solution of D.E: $\dfrac{d^2y}{dx^2}-4\dfrac{dy}{dx}+4y=0$  
-      \end{enumerate}
+    \end{enumerate}
 \end{enumerate}
 \end{tcolorbox}
 
-\noindent \textbf{Initial Value Problem: } \\
+\noindent \textbf{Initial Value Problem: } 
 \begin{adjustwidth}{1.5cm}{0pt}
     $\dfrac{dy}{dx}=x$ \\ 
     $\Rightarrow y = \dfrac{x^2}{2}+c$
@@ -471,7 +471,34 @@ Example:
     \text{So, }y &= 3e^x
 \end{align*}
 \begin{flushright}
-    {\small \textbf{End of Class 01 (12 Aug,2025)}}
+    {\small \textbf{End of Class 02 (12 Aug,2025)}}
 \end{flushright}
-Hello
+\newpage
+\noindent\textbf{\large Existance and Unique Solution} 
+$$y = x^n$$
+\begin{center}
+    $x\uparrow y\uparrow$ but when $0 < x < 1$ then $x\uparrow y\downarrow$
+\end{center}
+\fbox{\strut $\dfrac{dy}{dx} = f(x,y) ; y(x) = y_0$} $\longrightarrow$ initial value \\
+If $f(x,y)$ and $\dfrac{dy}{dx}$ are continuous on $\mathbb{R}$
+%Some part Gap
+
+
+
+
+\begin{tcolorbox}[breakable, title = {\textbf{Example 1.9: } Solve $x\dfrac{dy}{dx} = y;\quad  y(0) = 1$}]
+    \begin{adjustwidth}{2cm}{0pt}
+        \begin{flalign*}
+    &x\dfrac{dy}{dx} = y& \\ 
+    \Rightarrow \,\, &\dfrac{dy}{dx} = \dfrac{y}{x} = f(x,y); \qquad y(0) = 1 \quad (0,1) &\\
+    \Rightarrow \,\,&\dfrac{dy}{y} = \dfrac{dx}{x} \\
+    \Rightarrow \,\, &\ln y = \ln x + c&\\ 
+    \Rightarrow \,\, &\ln y = \ln (xc) &\\ 
+    \Rightarrow \,\, &y = xc&
+   \end{flalign*} 
+    \end{adjustwidth}
+   
+\end{tcolorbox}
+% Left alignment of multiline equations
+
 \end{document}
