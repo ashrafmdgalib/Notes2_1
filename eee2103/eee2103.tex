@@ -402,14 +402,17 @@ X=A+B
 \vspace{10pt}
 
 \begin{examplebox}[Simplify \\
-    \ensuremath{1.Y=A\bar{B}+BC+AC\\2.F=\bar{A}\bar{B}+A\bar{C}+\bar{B}\bar{C}}]
-    \begin{minipage}{.5\linewidth}
+    \ensuremath{1.Y=A\overline{B}+BC+AC\\2.F=\bar{A}\bar{B}+A\bar{C}+\bar{B}\bar{C}}]
+    \begin{minipage}{.45\linewidth}
          \begin{align*}
         1.Y&=A\bar{B}+BC+AC\\
            &=AC+A\bar{B}
     \end{align*}
     \end{minipage}
-   \begin{minipage}{.5\linewidth}
+    \begin{minipage}{0.09\linewidth}
+        \rule{1.2pt}{1.7cm}
+    \end{minipage}
+   \begin{minipage}{.45\linewidth}
         \begin{align*}
             2.F&=\bar{A}\bar{B}+A\bar{C}+\bar{B}\bar{C}\\
                &=\bar{A}\bar{B}+A\bar{C}
@@ -498,7 +501,8 @@ Maxterm $\rightarrow(A+B+C)$\\ [10pt]
  \vspace{5pt}
  \textbf{2.Minimal :} Each minterm doesn't have all  the variables in normal or complicated form.\\
  \begin{questionbox}[For the given truth table minimize the SOP expression.]
-    \begin{minipage}{.5\linewidth}
+    \begin{center}
+        \begin{minipage}{.4\linewidth}
     \begin{tabularx}{0.8\textwidth} { 
   | >{\centering\arraybackslash}X 
   | >{\centering\arraybackslash}X 
@@ -516,6 +520,9 @@ Maxterm $\rightarrow(A+B+C)$\\ [10pt]
  \hline
     \end{tabularx}   
     \end{minipage}
+    \begin{minipage}{0.09\linewidth}
+        \rule{1.2pt}{4.5cm}
+    \end{minipage}
  \begin{minipage}{.4\linewidth}
     The cononical SOP form of this function \\
     \begin{align*}
@@ -524,6 +531,7 @@ Maxterm $\rightarrow(A+B+C)$\\ [10pt]
         &=B
     \end{align*}
  \end{minipage}
+    \end{center}
  \end{questionbox}
  \vspace{10pt}
 \begin{questionbox}[Simplify the expression for \ensuremath{Y=(A+B)=\sum (0,2,3)}]
@@ -558,7 +566,7 @@ $\rightarrow$ POS form is used for low function means the  O/P is '0'.\\
     \vspace{10pt}
 
     \begin{examplebox}[Write the minimize POS form of this truth table.]
-        \begin{minipage}{.5\linewidth}
+        \begin{minipage}{.3\linewidth}
     \begin{tabularx}{0.8\textwidth} { 
   | >{\centering\arraybackslash}X 
   | >{\centering\arraybackslash}X 
@@ -585,7 +593,7 @@ $\rightarrow$ POS form is used for low function means the  O/P is '0'.\\
 \hline
 \end{tabularx}
     \end{minipage}
-    \begin{minipage}{.32\linewidth}
+    \begin{minipage}{.7\linewidth}
         \begin{align*}
             F&=(A+B+C).(A+B+\bar{C})(A+\bar{B}+\bar{C}) \rightarrow [\text{maxterm}]\\
             &=(X+C)(X+\bar{C})(A+\bar{B}+\bar{C})\\
@@ -636,36 +644,36 @@ $\rightarrow$ POS form is used for low function means the  O/P is '0'.\\
  For those type of question, the truth table and equation are given.\\ 
  \begin{examplebox}[Minimize the equation\\
      \ensuremath{Y(A,B,C)=\sum M(0,2,3,6,7)\\Y(A,B,C)=\prod M(1,4,5)}]
-    OR\\
-     \begin{minipage}{.32\linewidth}
-    \begin{tabularx}{0.5\textwidth} { 
-  | >{\centering\arraybackslash}X 
-  | >{\centering\arraybackslash}X 
-  | >{\centering\arraybackslash}X  
-  | >{\centering\arraybackslash}X| }
- \hline
- \textbf{A} &  \textbf{B}& \textbf{C} & \textbf{F}\\
- \hline
-  0 & 0& 0 & 0\\
-\hline
-   0 & 0& 1 & 0\\
-\hline 
-0 & 1& 0 & 1 \\
-\hline
- 0 & 1 & 1 & 0\\
-\hline
- 1 & 0& 0 & 1 \\
-\hline
- 1 & 0& 1 & 1\\
-\hline
- 1 & 1& 0 & 1\\
-\hline
- 1 & 1& 1 & 1\\
-\hline
-\end{tabularx}
+    OR, \\ [10pt]
+     \begin{minipage}{.3\linewidth}
+            \begin{tabularx}{0.5\textwidth} { 
+        | >{\centering\arraybackslash}X 
+        | >{\centering\arraybackslash}X 
+        | >{\centering\arraybackslash}X  
+        | >{\centering\arraybackslash}X| }
+        \hline
+        \textbf{A} &  \textbf{B}& \textbf{C} & \textbf{F}\\
+        \hline
+        0 & 0& 0 & 0\\
+        \hline
+        0 & 0& 1 & 0\\
+        \hline 
+        0 & 1& 0 & 1 \\
+        \hline
+        0 & 1 & 1 & 0\\
+        \hline
+        1 & 0& 0 & 1 \\
+        \hline
+        1 & 0& 1 & 1\\
+        \hline
+        1 & 1& 0 & 1\\
+        \hline
+        1 & 1& 1 & 1\\
+        \hline
+        \end{tabularx}
     \end{minipage}
-    \begin{minipage}{.32\linewidth}
-        \text{SOP}\\
+    \begin{minipage}{.3\linewidth}
+        SOP\\
         \begin{align*}
             Y&=\bar{A}\bar{B}\bar{C}+\bar{A}B\bar{C}+\bar{A}BC+AB\bar{C}+ABC\\
              &=\bar{A}\bar{B}\bar{C}+\bar{A}B(\bar{C}+C)+AB(\bar{C}+C)\\
@@ -675,7 +683,7 @@ $\rightarrow$ POS form is used for low function means the  O/P is '0'.\\
              &=B+\bar{A}\bar{C}
         \end{align*}
     \end{minipage}
-    \begin{minipage}{.32\linewidth}
+    \begin{minipage}{.3\linewidth}
         \text{\centering POS}\\
         \begin{align*}
             Y&=(A+B+\bar{C})(\bar{A}+B+C)(\bar{A}+B+\bar{C})\\
