@@ -98,7 +98,7 @@ Equations}
 }
     \begin{center}
         \begin{LARGE}
-            \textbf{\noindent Department of Electrical and Electrronics Engineering} \\
+            \textbf{\noindent Department of Electrical and Electronics Engineering} \\
              \textbf{University of Dhaka} \\
         \end{LARGE}
         \begin{Large}
@@ -486,18 +486,226 @@ If $f(x,y)$ and $\dfrac{dy}{dx}$ are continuous on $\mathbb{R}$
 
 
 \begin{tcolorbox}[breakable, title = {\textbf{Example 1.9: } Solve $x\dfrac{dy}{dx} = y;\quad  y(0) = 1$}]
+    Solution: 
+    \vspace*{-15pt}
     \begin{adjustwidth}{2cm}{0pt}
         \begin{flalign*}
     &x\dfrac{dy}{dx} = y& \\ 
     \Rightarrow \,\, &\dfrac{dy}{dx} = \dfrac{y}{x} = f(x,y); \qquad y(0) = 1 \quad (0,1) &\\
     \Rightarrow \,\,&\dfrac{dy}{y} = \dfrac{dx}{x} \\
-    \Rightarrow \,\, &\ln y = \ln x + c&\\ 
+    \Rightarrow \,\, &\ln y = \ln x + \ln c&\\ 
     \Rightarrow \,\, &\ln y = \ln (xc) &\\ 
     \Rightarrow \,\, &y = xc&
    \end{flalign*} 
     \end{adjustwidth}
-   
+When $x = 0$, $$1=0\cdot c \qquad [y(0)=1]$$ 
+There is no solution in $(0,1).$ \\
+When $x=0, y(0)=c\cdot 0 = 0$, but given that at $x=0; y =1.$ This is shows that the solution doesn't satisfy the initial condition. \\
+So, the given IVP $x\dfrac{dy}{dx} = y; y(0)=1$ has no solution. \\
+Since $f(x,y) = \dfrac{y}{x}$ is not cont's at (0,1).  
 \end{tcolorbox}
-% Left alignment of multiline equations
+\begin{tcolorbox}[breakable, title = {\textbf{Example 1.10: } Solve $x\dfrac{dy}{dx} = y;\quad  y(1) = 1$}]
+    Solution:  
+    \vspace*{-15pt}
+    \begin{adjustwidth}{2cm}{0pt}
+        \begin{flalign*}
+            &x\dfrac{dy}{dx} = y& \\ 
+            \Rightarrow \,\, &\dfrac{dy}{dx} = \dfrac{y}{x} = f(x,y)& \\ 
+            \Rightarrow \,\, &\dfrac{df}{dy} = \dfrac{1}{x} &
+        \end{flalign*}
+    \end{adjustwidth}
+    Since $f(x,y)$ and $\dfrac{df}{dy}$ both are continuous at $(1,1)$. So, this IVP has a unique solution. 
+    \begin{adjustwidth}{2cm}{0pt}
+        \begin{flalign*}
+            &\dfrac{dy}{dx} = \dfrac{y}{x}& \\
+            \Rightarrow \, \, &\dfrac{dy}{y}=\dfrac{dx}{x}& \\
+            \Rightarrow \,\, &\ln y = \ln x + \ln c&\\ 
+            \Rightarrow \,\, &\ln y = \ln (xc) &\\ 
+            \Rightarrow \,\, &y = xc&
+        \end{flalign*}
+    \end{adjustwidth}
+    When $x=1; y= 1 = c\cdot 1 \Rightarrow c = 1;$ \\
+    So, $y = x$ is the unique solution of the given IVP. \\
+    \hspace*{20pt} \fbox{\strut $y = cx$}$\longrightarrow$ G.S \\
+    \hspace*{23pt} \fbox{\strut $y = x$}$\longrightarrow$ P.S  
+\end{tcolorbox}
+\begin{tcolorbox}[breakable, title = {\textbf{Example 1.11: } Solve $x\dfrac{dy}{dx} = y;\quad  y(0) = 0$}]
+    Solution:  
+    \vspace*{-15pt}
+    \begin{adjustwidth}{2cm}{0pt}
+        \begin{flalign*}
+            &\dfrac{dy}{dx} = \dfrac{y}{x}& \\
+            \Rightarrow \, \, &\dfrac{dy}{y}=\dfrac{dx}{x}& \\
+            \Rightarrow \,\, &\ln y = \ln x + \ln c&\\ 
+            \Rightarrow \,\, &\ln y = \ln (xc) &\\ 
+            \Rightarrow \,\, &y = xc&
+        \end{flalign*}
+    \end{adjustwidth}
+    When $x=0; y= 0 = c\cdot 0 \Rightarrow c = 0;$ \\
+    The solution of the given IVP is exist but not unique solution (it has many solution). 
+\end{tcolorbox}
+\noindent Therefore, the IVP $\dfrac{dy}{dx} = \dfrac{y}{x}; \quad y(x_0) = y_0$ has
+\begin{enumerate}
+    \item no solution if $x_0 = 0, y_0 \neq 0$ 
+    \item unique solution if $x_0 \neq 0; y \subset \mathbb{R} \quad [y(1)=1]$
+    \item Infinity many solutions if $x_0 =0, y_0 = 0$.
+\end{enumerate}
+\textbf{\large Equation of $1^{st}$ order and $1^{st}$ degree} \\ [5pt]
+There are two standard form of the differential equation of $1^{st}$ order and $1^{st}$ degree namely.
+\begin{enumerate}
+    \item $\dfrac{dy}{dx}=f(x,y) \longrightarrow$ Derivative from separable of variables. 
+    \item $M(x,y)dx+N(x,y)dy=0 \longrightarrow $ Differential form  
+\end{enumerate}
+If a DE of the $1^{st} order$ and $1^{st}$ degree is of the form $f_1(x)dx = f_2(x)dy
+$ where $f_1(x)$ is a function of $x$ only and $f_2(y)$ is a function of $y$ only. 
+
+% Space for Example and remaining part 
+
+\begin{tcolorbox}[breakable, title = {\textbf{Example 1.12: }Solve the D.E $(1+x^2)(1+y^2)dx-xydy=0$}]
+Solution: 
+\begin{adjustwidth}{1cm}{0pt}
+    \vspace*{-15pt}
+    \begin{flalign*}
+        &\dfrac{(1+x^2)(1+y^2)dx}{x(1+y^2)}-\dfrac{xy}{x(1+y^2)}dy = 0 \quad \text{[Divided by $x(1+y^2)$]}& \\ 
+        \Rightarrow \,\, & \dfrac{(1+x^2)}{x}dx-\dfrac{y}{(1+y^2)dy} = 0& \\ 
+        \Rightarrow\,\, & \left(\dfrac{1}{x}+x\right)dx - \left(\dfrac{y}{1+y^2}\right)dy = 0& \\ 
+        \Rightarrow\,\, &\left(\ln x+\dfrac{x^2}{2}\right)-\dfrac{1}{2}\ln (1+y^2) = c&  \\ 
+        \Rightarrow\,\, &2\ln x+x^2-\ln (1+y^2) = 2c = c& \\
+        \Rightarrow\,\, &\ln x^2+x^2-\ln (1+y^2) = c& \\ 
+        \Rightarrow\,\, &\ln \dfrac{x^2}{1+y^2} = c -x^2& \\ 
+        \Rightarrow\,\, &\dfrac{x^2}{1+y^2} = e^{c-x^2}& \\
+        \Rightarrow\,\, &\dfrac{x^2}{e^{c-x^2}}=1+y^2& \\ 
+        \Rightarrow\,\, &1+y^2 = \dfrac{x^2e^{x^2}}{c}&
+    \end{flalign*}
+\end{adjustwidth}
+\end{tcolorbox}
+\begin{flushright}
+    {\small \textbf{End of Class 03 (19 Aug,2025)}}
+\end{flushright}
+\begin{tcolorbox}[breakable, title = {\textbf{Example 1.13: }Solve $\dfrac{dy}{dx}=\sin(x+y)+\cos(x+y)$}]
+Solution: \\
+Let, 
+\begin{adjustwidth}{1cm}{0pt}
+    \vspace*{-15pt}
+    \begin{flalign*}
+        &x+y=z&\\
+        \Rightarrow\,\, &1+\dfrac{dy}{dx} = \dfrac{dz}{dx}& \\ 
+        \Rightarrow\,\, &\dfrac{dy}{dx} = \dfrac{dz}{dx}-1& 
+    \end{flalign*}
+    \begin{flalign*}
+        (i)\,\, &\dfrac{dz}{dx}-1=\sin (z)+\cos (z)& \\ 
+        \Rightarrow\,\, &\dfrac{dz}{dx} = \sin(z)+\cos(z)+1& \\
+        \Rightarrow\,\, &\dfrac{dz}{\sin z+\cos z+1} = dx& \\
+        \Rightarrow\,\, &\dfrac{dz}{2\cos ^2\dfrac{z}{2}+2\sin\dfrac{z}{2}\cos\dfrac{z}{2}} = dx& \\
+        \Rightarrow\,\, &\dfrac{\dfrac{dz}{\cos^2\dfrac{z}{2}}}{2+2\tan\dfrac{z}{2}} = dx& \\
+        \Rightarrow\,\, &\dfrac{\dfrac{1}{2}\sec^2\dfrac{z}{2}}{1+\tan\dfrac{z}{2}}dz = dx& \\
+        \Rightarrow\,\, &\ln \left(1+\tan\dfrac{z}{2}\right) = x+c \\
+        \Rightarrow\,\, &\ln \left(1+\tan\dfrac{x+y}{2}\right) = x+c
+    \end{flalign*}
+\end{adjustwidth}
+\end{tcolorbox}
+\begin{tcolorbox}[breakable, title= \textbf{H.W: }]
+    Solve the following D.E: 
+    \begin{enumerate}
+        \item $2xdy-2ydz=\sqrt{x^2+4y^2}dx$
+        \item $(3y-7x+7)dx+(7y-3x+3)dy=0$
+    \end{enumerate}
+\end{tcolorbox}
+\textbf{\large Homogenous function: }\\ [5pt]
+Function $z=f(x,y)$ is called homogenous function of degree $n$ if $f(xt, yt) = t^nf(x,y)=x^n\phi\left(1,\dfrac{y}{x}\right)$. \\ [5pt]
+Example: \\
+\vspace*{-20pt}
+\begin{center}
+    \begin{minipage}{0.4\linewidth}
+        \vspace*{-5pt}
+    \begin{flalign*}
+        f(x,y) &= x^2+2xy+y^2& \\
+        f(xt,yt) &= (xt)^2+2(xt)(yt)+(yt)^2 & \\ 
+        &=t^2(x^2+2xy+y^2)& \\
+        &=t^2f(x,y)&
+    \end{flalign*}
+\end{minipage}
+\begin{minipage}{0.09\linewidth}
+    \begin{center}
+        \vspace*{10pt}
+        \rule{1pt}{2.8cm}
+    \end{center}
+\end{minipage}
+\begin{minipage}{0.4\linewidth}
+    \begin{flalign*}
+        f(x,y) &= x^2+2xy+y^2& \\
+        &= x^2\left(1+2\cdot1\cdot\dfrac{y}{x}+\dfrac{y^2}{x^2}\right)& \\ 
+       &=x^2\phi\left(1,\dfrac{y}{x}\right)&
+    \end{flalign*}
+\end{minipage}
+\end{center}
+A D.E of the form - $M(x,y)dx+N(x,y)dy=0$ is said to be homogenous if both the co-efficient $M(x,y)$ and $N(x,y)$ are homogenous function of same degree. \\
+Example: \begin{enumerate}
+    \item $2xydx+s^2dy=0$
+    \item $(x^2+xy)dx+(y^2+xy)dy=0$
+\end{enumerate}
+In other words $M(x,y)dx+N(x,y)dy=0$ is homogenous D.E of degree $n$ if $M(xt,yt)=t^nM(x,y)$ and $N(xt,yt)=t^nN(x,y)$. \\ [5pt]
+$\dfrac{dy}{dx} = - \dfrac{M(x,y)}{N(x,y)} = \dfrac{f_1(x,y)}{f_2(x,y)}$ \\ [5pt]
+A D.E of the form $\dfrac{dy}{dx}=\dfrac{f_1(x,y)}{f_2(x,y)}$ in which $f_1(x,y)$ and $f_2(x,y)$ are homogenous function of same degree can be reduced to an equation in which variables are separated by using $y=vx$ or $x=vy$ in this case, our new variables are $v,x$ or $v,y$
+\begin{tcolorbox}[breakable, title = {\textbf{Example 1.14: }Solve the D.E $(x^3+3xy^2)dx+(y^3+3x^2y)dy=0$}]
+Solution:
+\begin{adjustwidth}{1cm}{0pt}
+    \vspace*{-20pt}
+    \begin{flalign*}
+        &(x^3+3xy^2)dx+(y^3+3x^2y)dy=0& \\
+        \Rightarrow\,\, &\dfrac{dy}{dx} = -\dfrac{x^2+3xy^2}{y^3+3x^2y} = -\dfrac{x^3\left(1+\left(\dfrac{y}{x}\right)^2\right)}{x^3\left(\left(\dfrac{y}{x}\right)^3+3\left(\dfrac{y}{x}\right)\right)}& \\ 
+        \Rightarrow\,\, &\dfrac{dy}{dx} = -\dfrac{1+\left(\dfrac{y}{x}\right)^2}{\left(\dfrac{y}{x}\right)^3+3\left(\dfrac{y}{x}\right)} \qquad \longrightarrow (i)&
+    \end{flalign*}
+\end{adjustwidth}
+Now let, $$y=vx \quad  \Rightarrow v = \dfrac{y}{x}$$
+$$\dfrac{dy}{dx}= v+x\dfrac{dv}{dx}\quad \longrightarrow(ii)$$
+Using the equation $(i)$ and $(ii)$,
+\begin{adjustwidth}{1cm}{0pt}
+    \vspace*{-20pt}
+    \begin{flalign*}
+        v+x\dfrac{dv}{dx} &=  -\dfrac{1+3v^2}{v^3+3v}& \\
+        \Rightarrow\,\, x\dfrac{dv}{dx} &= -\dfrac{1+3v^2}{v^3+3v}-v& \\ 
+        &=\dfrac{-1-3v^2-v^4-3v^2}{v^3+3v}& \\
+        &=\dfrac{-1-6v^2-v^4}{v^3+3v}& \\
+        &=-\dfrac{v^4+6v^2+1}{v^3+3v}& \\ 
+        \Rightarrow\,\, -\dfrac{v^3+3v}{v^4+6v^2+1}dv &= \dfrac{1}{x}dx \\ 
+        \Rightarrow\,\, -\dfrac{4(v^3+3v)}{v^4+6v^2+1}dv &= 4\dfrac{1}{x}dx \\
+        \Rightarrow\,\, -\ln(v^4+6v^2+1) &= 4\ln x +\ln c  \\ 
+        \Rightarrow \,\, \ln\left(\left(\dfrac{y}{x}\right)^4+6\left(\dfrac{y}{x}\right)^2+1\right)^{-1} &= \ln (x^4c) \\ 
+        \Rightarrow\,\, \dfrac{1}{\left(\dfrac{y}{x}\right)^4+6\left(\dfrac{y}{x}\right)^2+1}. &=x^4c \\
+        \Rightarrow\,\,
+        \dfrac{1}{c} &= x^4\left(\left(\dfrac{y}{x}\right)^4+6\left(\dfrac{y}{x}\right)^2+1\right) \\ 
+        \Rightarrow\,\, c &= y^4+6x^2y^2+x^4
+    \end{flalign*}
+\end{adjustwidth}
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[breakable, title = {\textbf{Example 1.15: }Solve the D.E $(x^2+y^2)dx+2xydy=0$}]
+Solution:
+\begin{adjustwidth}{1cm}{0pt}
+    \vspace*{-20pt}
+    \begin{flalign*}
+        \dfrac{dy}{dx} = \dfrac{x^2+y^2}{2xy} \qquad \longrightarrow (i)
+    \end{flalign*}
+\end{adjustwidth}
+Now let, $$y=vx \quad  \Rightarrow v = \dfrac{y}{x}$$
+$$\dfrac{dy}{dx}= v+x\dfrac{dv}{dx}\quad \longrightarrow(ii)$$
+Using the equation $(i)$ and $(ii)$,
+\begin{adjustwidth}{1cm}{0pt}
+    \vspace*{-20pt}
+    \begin{flalign*}
+        v+x\dfrac{dv}{dx} &= -\dfrac{x^2+v^2x^2}{2x\cdot vx}& \\
+        \Rightarrow \,\, x\dfrac{dv}{dx} &= -\dfrac{1+v^2}{2v}-v = \dfrac{-1-v^2-2v^2}{2v} =- \dfrac{1+3v^2}{2v}&\\
+        \Rightarrow\,\,-\dfrac{2vdv}{1+3v^2} &=\dfrac{1}{x}dx& \\
+        \Rightarrow\,\, \dfrac{6vdv}{1+3v^2} &= -\dfrac{3}{x}dx & \\ 
+        \Rightarrow \ln (1+3v^2) &= -3\ln x-\ln c = -\ln (x^3c) = \ln \left(\dfrac{1}{x^3c}\right)& \\ 
+        \Rightarrow\,\, 1+3v^2 &= \dfrac{1}{x^3c}& \\
+        \Rightarrow\,\, 1+3\left(\dfrac{y}{x}\right)^2 &= \dfrac{1}{x^3c}& \\
+        \Rightarrow\,\, x^3+3xy^2 &=c&
+\end{flalign*}
+
+\end{adjustwidth}
+\end{tcolorbox}
 
 \end{document}

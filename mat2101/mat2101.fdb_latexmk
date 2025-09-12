@@ -1,18 +1,20 @@
 # Fdb version 4
-["xdvipdfmx"] 1757617136.23452 "mat2101.xdv" "mat2101.pdf" "mat2101" 1757617136.62775 0
-  "mat2101.xdv" 1757617136.16582 280828 dc26d5ab3f3d8ce756862f062a4f0339 "xelatex"
+["xdvipdfmx"] 1757703822.71962 "mat2101.xdv" "mat2101.pdf" "mat2101" 1757703822.98051 0
+  "mat2101.xdv" 1757703822.6476 350352 2d2df46543e349ecf8e947dad02b638d "xelatex"
   (generated)
   "mat2101.pdf"
   (rewritten before read)
-["xelatex"] 1757617133.76664 "/Users/mdgalibashraf/Documents/Notes2_1/mat2101/mat2101.tex" "mat2101.xdv" "mat2101" 1757617136.62536 0
-  "/Users/mdgalibashraf/Documents/Notes2_1/mat2101/mat2101.tex" 1757617133.56822 20278 9a611a65d68071b420af8f04b15f3a88 ""
+["xelatex"] 1757703820.28414 "/Users/mdgalibashraf/Documents/Notes2_1/mat2101/mat2101.tex" "mat2101.xdv" "mat2101" 1757703822.97822 0
+  "/Users/mdgalibashraf/Documents/Notes2_1/mat2101/mat2101.tex" 1757703820.08479 30220 038f65649984dd31c8b05f96638a19f6 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1246382020 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -327,10 +329,10 @@
   "/usr/local/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1727030809 10850162 97182de31d1e77244b945eb79126344a ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "logo.du.png" 1742327957.09488 14376 1dda46714ffcae41cf9c5a9bc05f2b58 ""
-  "mat2101.aux" 1757617136.16497 347 9b4a8fa39d295e98d362bb2c6feae200 "xelatex"
-  "mat2101.out" 1757617136.16563 156 300db0a1f2460929f20506c4fb21bde5 "xelatex"
-  "mat2101.tex" 1757617133.56822 20278 9a611a65d68071b420af8f04b15f3a88 ""
-  "mat2101.toc" 1757617136.16579 78 a6a14ab6310e7bc3aaa54d957d275241 "xelatex"
+  "mat2101.aux" 1757703822.64672 347 2e8733da6c1fe34f7430bb19c698bb97 "xelatex"
+  "mat2101.out" 1757703822.64738 156 300db0a1f2460929f20506c4fb21bde5 "xelatex"
+  "mat2101.tex" 1757703820.08479 30220 038f65649984dd31c8b05f96638a19f6 ""
+  "mat2101.toc" 1757703822.64757 78 a6a14ab6310e7bc3aaa54d957d275241 "xelatex"
   (generated)
   "mat2101.aux"
   "mat2101.log"
